@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-NSString *localizedMetadataKeyName(NSString  *key);
+NSString *localizedMetadataKeyName(NSString *key);
 
 // Common Metadata keys
 extern NSString *const MP42MetadataKeyName;                     // String
@@ -22,6 +22,7 @@ extern NSString *const MP42MetadataKeyGrouping;                 // String
 extern NSString *const MP42MetadataKeyUserComment;              // String
 extern NSString *const MP42MetadataKeyUserGenre;                // String
 extern NSString *const MP42MetadataKeyReleaseDate;              // Date
+extern NSString *const MP42MetadataKeyDuration;                 // Int/String
 
 extern NSString *const MP42MetadataKeyTrackNumber;              // Array<Int>
 extern NSString *const MP42MetadataKeyDiscNumber;               // Array<Int>
@@ -121,3 +122,131 @@ extern NSString *const MP42MetadataKeyUnofficialSubtitle;       // String
 extern NSString *const MP42MetadataKeyUnofficialLanguage;       // String
 extern NSString *const MP42MetadataKeyUnofficialASIN;           // String
 extern NSString *const MP42MetadataKeyUnofficialAbridged;       // Bool
+
+// TMDb Extended Metadata keys
+extern NSString *const MP42MetadataKeyTMDbContentID;            // String
+
+// Prime Video Extended Metadata keys
+extern NSString *const MP42MetadataKeyPrimeVideoContentID;      // String
+extern NSString *const MP42MetadataKeyPrimeVideoContentURL;     // String
+
+// VMX Extended Metadata keys
+extern NSString *const MP42MetadataKeyService;                  // String
+extern NSString *const MP42MetadataKeyVMXContentID;             // String
+extern NSString *const MP42MetadataKeyVMXContentURL; // String
+
+// Wavve Extended Metadata keys
+extern NSString *const MP42MetadataKeyWavveMovieID;             // String
+extern NSString *const MP42MetadataKeyWavveShowID;              // String
+extern NSString *const MP42MetadataKeyWavveEpisodeID;           // String
+extern NSString *const MP42MetadataKeyWavveContentURL;          // String
+
+// Netflix Extended Metadata keys
+extern NSString *const MP42MetadataKeyNetflixMovieID;            // String
+extern NSString *const MP42MetadataKeyNetflixShowID;             // String
+extern NSString *const MP42MetadataKeyNetflixEpisodeID;          // String
+extern NSString *const MP42MetadataKeyNetflixContentURL;         // String
+extern NSString *const MP42MetadataKeyNetflixRating;             // String
+extern NSString *const MP42MetadataKeyNetflixRatingDescription;  // String
+extern NSString *const MP42MetadataKeyNetflixContentAdvisories;  // String
+extern NSString *const MP42MetadataKeyNetflixGenre;              // String
+
+// CATCHPLAY+ Extended Metadata keys
+extern NSString *const MP42MetadataKeyCatchplayMovieID;
+extern NSString *const MP42MetadataKeyCatchplayShowID;
+extern NSString *const MP42MetadataKeyCatchplayEpisodeID;
+extern NSString *const MP42MetadataKeyCatchplayContentURL;
+extern NSString *const MP42MetadataKeyCatchplayContentAdvisories;
+
+// Vidio Extended Metadata keys
+extern NSString *const MP42MetadataKeyVidioGenre;              // String
+extern NSString *const MP42MetadataKeyVidioRating;             // String
+extern NSString *const MP42MetadataKeyVidioContentURL;         // String
+extern NSString *const MP42MetadataKeyVidioMovieID;            // String
+extern NSString *const MP42MetadataKeyVidioShowID;             // String
+extern NSString *const MP42MetadataKeyVidioEpisodeID;          // String
+
+// FANZA Extended Metadata keys
+extern NSString *const MP42MetadataKeyFANZAContentID;          // String
+extern NSString *const MP42MetadataKeyFANZAProductID;          // String
+extern NSString *const MP42MetadataKeyFANZAContentURL;         // String
+
+// DMM Extended Metadata keys
+extern NSString *const MP42MetadataKeyDMMContentID;            // String
+extern NSString *const MP42MetadataKeyDMMProductID;            // String
+extern NSString *const MP42MetadataKeyDMMContentURL;           // String
+
+// Caribbean Extended Metadata keys
+extern NSString *const MP42MetadataKeyCaribbeanContentID;      // String
+extern NSString *const MP42MetadataKeyCaribbeanContentURL;     // String
+
+// 1Pondo Extended Metadata keys
+extern NSString *const MP42MetadataKey1PondoContentID;         // String
+extern NSString *const MP42MetadataKey1PondoContentURL;        // String
+
+// MissAV Extended Metadata keys
+extern NSString *const MP42MetadataKeyMissAVContentID;
+extern NSString *const MP42MetadataKeyMissAVProductID;
+extern NSString *const MP42MetadataKeyMissAVContentURL;
+
+// Japan DVD Extended Metadata keys
+extern NSString *const MP42MetadataKeyJapanDVDContentID;
+extern NSString *const MP42MetadataKeyJapanDVDProductID;
+extern NSString *const MP42MetadataKeyJapanDVDContentURL;
+
+// U-NEXT Extended Metadata keys
+extern NSString *const MP42MetadataKeyUNEXTMovieID;             // String
+extern NSString *const MP42MetadataKeyUNEXTShowID;              // String
+extern NSString *const MP42MetadataKeyUNEXTEpisodeID;           // String
+extern NSString *const MP42MetadataKeyUNEXTContentURL;          // String
+
+// Disney+ Extended Metadata keys
+extern NSString *const MP42MetadataKeyDisneyPlusMovieID;       // String
+extern NSString *const MP42MetadataKeyDisneyPlusShowID;        // String
+extern NSString *const MP42MetadataKeyDisneyPlusEpisodeID;     // String
+extern NSString *const MP42MetadataKeyDisneyPlusContentURL;    // String
+
+// Apple Music Extended Metadata keys
+extern NSString *const MP42MetadataKeyAppleMusicContentID;      // String
+extern NSString *const MP42MetadataKeyAppleMusicArtistID;       // String
+extern NSString *const MP42MetadataKeyAppleMusicAlbumID;        // String
+extern NSString *const MP42MetadataKeyAppleMusicURL;            // String
+extern NSString *const MP42MetadataKeyAppleMusicISRC;           // String
+
+// Apple TV Extended Metadata keys
+extern NSString *const MP42MetadataKeyAppleTVContentID;         // String
+extern NSString *const MP42MetadataKeyAppleTVShowID;            // String
+extern NSString *const MP42MetadataKeyAppleTVSeasonID;          // String
+extern NSString *const MP42MetadataKeyAppleTVEpisodeID;         // String
+
+extern NSString *const MP42MetadataKeyAppleTVContentURL;        // String
+extern NSString *const MP42MetadataKeyAppleTVShowURL;           // String
+extern NSString *const MP42MetadataKeyAppleTVSeasonURL;         // String
+
+extern NSString *const MP42MetadataKeyAppleGenreID;             // String
+
+extern NSString *const MP42MetadataKeyCountryOfOrigin;          // String
+extern NSString *const MP42MetadataKeyOriginalSpokenLanguage;   // String
+
+extern NSString *const MP42MetadataKeyRecommendedAge;           // Int/String
+extern NSString *const MP42MetadataKeyContentAdvisories;        // String
+extern NSString *const MP42MetadataKeyCommonSenseSummary;       // String
+extern NSString *const MP42MetadataKeyCommonSenseContentInfo;   // String
+
+extern NSString *const MP42MetadataKeyAppleTVRatingName;        // String
+extern NSString *const MP42MetadataKeyAppleTVRatingSystem;      // String
+extern NSString *const MP42MetadataKeyAppleTVRatingSystemType;  // String
+extern NSString *const MP42MetadataKeyAppleTVRatingValue;       // Int/String
+
+extern NSString *const MP42MetadataKeyAppleTVEpisodeIndex;      // Int/String
+extern NSString *const MP42MetadataKeyAppleTVFractionalEpisodeNumber; // Float/String
+extern NSString *const MP42MetadataKeyAppleTVIsFirstEpisode;    // String
+
+extern NSString *const MP42MetadataKeyAppleTVSeasonAdamID;      // String
+extern NSString *const MP42MetadataKeyAppleTVSeasonCanonicalID; // String
+
+extern NSString *const MP42MetadataKeyAppleTVVersion;           // String
+extern NSString *const MP42MetadataKeyAppleTVIsEntitledToPlay;  // String
+extern NSString *const MP42MetadataKeyAppleTVRoles;             // JSON String
+
+extern NSString *const MP42MetadataKeyCreator;                  // String
