@@ -369,6 +369,16 @@ NSString *localizedMetadataKeyName(NSString *key)
             MP42MetadataKeyVMXContentURL:
                 NSLocalizedStringFromTableInBundle(@"VMX Content URL", @"Localizable", bundle, nil),
             
+            // MARK: Paramount+ Extended Metadata
+            MP42MetadataKeyParamountPlusMovieID:
+                NSLocalizedStringFromTableInBundle(@"Paramount+ Movie ID", @"Localizable", bundle, nil),
+
+            MP42MetadataKeyParamountPlusEpisodeID:
+                NSLocalizedStringFromTableInBundle(@"Paramount+ Episode ID", @"Localizable", bundle, nil),
+
+            MP42MetadataKeyParamountPlusContentURL:
+                NSLocalizedStringFromTableInBundle(@"Paramount+ Content URL", @"Localizable", bundle, nil),
+
             // MARK: Netflix Extended Metadata
 
             MP42MetadataKeyNetflixMovieID:
@@ -845,6 +855,16 @@ NSString *const MP42MetadataKeyVMXContentID =
 
 NSString *const MP42MetadataKeyVMXContentURL =
     @"VMX Content URL";
+
+// MARK: - Paramount+ Extended Metadata
+NSString *const MP42MetadataKeyParamountPlusMovieID =
+    @"Paramount+ Movie ID";
+
+NSString *const MP42MetadataKeyParamountPlusEpisodeID =
+    @"Paramount+ Episode ID";
+
+NSString *const MP42MetadataKeyParamountPlusContentURL =
+    @"Paramount+ Content URL";
 
 // MARK: - Netflix Extended Metadata
 

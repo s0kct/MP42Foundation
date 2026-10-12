@@ -141,6 +141,11 @@ extern NSString *const MP42MetadataKeyWavveShowID;              // String
 extern NSString *const MP42MetadataKeyWavveEpisodeID;           // String
 extern NSString *const MP42MetadataKeyWavveContentURL;          // String
 
+// Paramount+ Extended Metadata keys
+extern NSString *const MP42MetadataKeyParamountPlusMovieID; // String
+extern NSString *const MP42MetadataKeyParamountPlusEpisodeID; // String
+extern NSString *const MP42MetadataKeyParamountPlusContentURL; // String
+
 // Netflix Extended Metadata keys
 extern NSString *const MP42MetadataKeyNetflixMovieID;            // String
 extern NSString *const MP42MetadataKeyNetflixShowID;             // String

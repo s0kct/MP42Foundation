@@ -242,6 +242,11 @@
         MP42MetadataKeyVMXContentID,
         MP42MetadataKeyVMXContentURL,
         
+        // Paramount+ Extended Metadata
+        MP42MetadataKeyParamountPlusMovieID,
+        MP42MetadataKeyParamountPlusEpisodeID,
+        MP42MetadataKeyParamountPlusContentURL,
+
         // Netflix Extended Metadata
         MP42MetadataKeyNetflixGenre,
         MP42MetadataKeyNetflixRatingDescription,
@@ -454,6 +459,11 @@
         MP42MetadataKeyVMXContentID,
         MP42MetadataKeyVMXContentURL,
         
+        // Paramount+ Extended Metadata
+        MP42MetadataKeyParamountPlusMovieID,
+        MP42MetadataKeyParamountPlusEpisodeID,
+        MP42MetadataKeyParamountPlusContentURL,
+
         // Netflix Extended Metadata
         MP42MetadataKeyNetflixMovieID,
         MP42MetadataKeyNetflixShowID,
@@ -1169,6 +1179,17 @@
     
     
     // ============================================================
+    // Paramount+ Extended Metadata READ
+    [self readABMetadataFromFileHandle:sourceHandle
+                           metadataKey:MP42MetadataKeyParamountPlusMovieID
+                                  name:"ParamountPlusMovieID"];
+    [self readABMetadataFromFileHandle:sourceHandle
+                           metadataKey:MP42MetadataKeyParamountPlusEpisodeID
+                                  name:"ParamountPlusEpisodeID"];
+    [self readABMetadataFromFileHandle:sourceHandle
+                           metadataKey:MP42MetadataKeyParamountPlusContentURL
+                                  name:"ParamountPlusContentURL"];
+
     // Netflix Extended Metadata READ
     // ============================================================
 
@@ -2075,6 +2096,17 @@
                                    name:"VMXContentURL"];
     
     // ============================================================
+    // Paramount+ Extended Metadata WRITE
+    [self writeABMetadataWithFileHandle:fileHandle
+                            metadataKey:MP42MetadataKeyParamountPlusMovieID
+                                   name:"ParamountPlusMovieID"];
+    [self writeABMetadataWithFileHandle:fileHandle
+                            metadataKey:MP42MetadataKeyParamountPlusEpisodeID
+                                   name:"ParamountPlusEpisodeID"];
+    [self writeABMetadataWithFileHandle:fileHandle
+                            metadataKey:MP42MetadataKeyParamountPlusContentURL
+                                   name:"ParamountPlusContentURL"];
+
     // Netflix Extended Metadata WRITE
     // ============================================================
     
