@@ -293,6 +293,14 @@ NSString *localizedMetadataKeyName(NSString *key)
             MP42MetadataKeyFANZAProductID:
                 NSLocalizedStringFromTableInBundle(@"FANZA Product ID", @"Localizable", bundle, nil),
             
+            // MARK: MGS Extended Metadata
+            MP42MetadataKeyMGSContentID:
+                NSLocalizedStringFromTableInBundle(@"MGS Content ID", @"Localizable", bundle, nil),
+            MP42MetadataKeyMGSProductID:
+                NSLocalizedStringFromTableInBundle(@"MGS Product ID", @"Localizable", bundle, nil),
+            MP42MetadataKeyMGSContentURL:
+                NSLocalizedStringFromTableInBundle(@"MGS Content URL", @"Localizable", bundle, nil),
+
             // MARK: DMM Extended Metadata
 
             MP42MetadataKeyDMMContentID:
@@ -781,6 +789,11 @@ NSString *const MP42MetadataKeyFANZAProductID =
 
 NSString *const MP42MetadataKeyFANZAContentURL =
     @"FANZA Content URL";
+
+// MARK: - MGS Extended Metadata
+NSString *const MP42MetadataKeyMGSContentID = @"MGS Content ID";
+NSString *const MP42MetadataKeyMGSProductID = @"MGS Product ID";
+NSString *const MP42MetadataKeyMGSContentURL = @"MGS Content URL";
 
 // MARK: - DMM Extended Metadata
 
