@@ -95,7 +95,6 @@ static void logCallback(MP4LogLevel loglevel, const char *fmt, va_list ap) {
 
 @end
 
-MP42_OBJC_DIRECT_MEMBERS
 @implementation MP42File
 
 @synthesize itracks = _tracks;
@@ -174,7 +173,7 @@ MP42_OBJC_DIRECT_MEMBERS
                                    MP42LocalizedString(@"The file is not a mp4 file.", @"error message"), 100);
                 [_logger writeErrorToLog:*error];
             }
-			return nil;
+            return nil;
         }
 
         // Check the major brand
@@ -259,9 +258,9 @@ MP42_OBJC_DIRECT_MEMBERS
 
         // Close the file
         [self stopReading];
-	}
+    }
 
-	return self;
+    return self;
 }
 
 /**
@@ -451,74 +450,121 @@ MP42_OBJC_DIRECT_MEMBERS
     NSAssert(self.status != MP42StatusWriting, @"Unsupported operation: trying to add a track while the file is open for writing");
     NSAssert(![self.itracks containsObject:track], @"Unsupported operation: trying to add a track that is already present.");
 
-    track.sourceId = track.trackId;
-    track.trackId = 0;
-    track.muxed = NO;
-    track.edited = YES;
+    if (!(self.undo.isUndoing || self.undo.isRedoing)) {
+        track.sourceId = track.trackId;
+        track.trackId = 0;
+        track.muxed = NO;
+        track.edited = YES;
 
-    track.language = track.language;
-    track.name = track.name;
-    if ([track isMemberOfClass:[MP42ChapterTrack class]]) {
-        for (id previousTrack in self.itracks)
-            if ([previousTrack isMemberOfClass:[MP42ChapterTrack class]]) {
-                [self.itracks removeObject:previousTrack];
-                break;
+        track.language = track.language;
+        track.name = track.name;
+        if ([track isMemberOfClass:[MP42ChapterTrack class]]) {
+            for (id previousTrack in [self.itracks copy]) {
+                if ([previousTrack isMemberOfClass:[MP42ChapterTrack class]]) {
+                    [self.itracks removeObject:previousTrack];
+                    break;
+                }
+            }
+        }
+        if (trackNeedConversion(track.format) && ![track isMemberOfClass:[MP42ChapterTrack class]]) {
+            NSAssert(track.conversionSettings, @"Missing conversion settings");
+        }
+        if (track.importer && track.URL) {
+            if (self.importers[track.URL.path]) {
+                track.importer = self.importers[track.URL.path];
+            } else {
+                self.importers[track.URL.path] = track.importer;
+            }
+        }
+        if ([track isMemberOfClass:[MP42AudioTrack class]]) {
+            MP42AudioTrack *audioTrack = (MP42AudioTrack *)track;
+            MP42Track *fallbackTrack = audioTrack.fallbackTrack;
+            if (fallbackTrack && ![self.itracks containsObject:fallbackTrack]) {
+                audioTrack.fallbackTrack = nil;
+            }
+        }
+        if ([track isMemberOfClass:[MP42ChapterTrack class]]) {
+            track.duration = self.duration;
         }
     }
-
-    if (trackNeedConversion(track.format) && ![track isMemberOfClass:[MP42ChapterTrack class]]) {
-        NSAssert(track.conversionSettings, @"Missing conversion settings");
-    }
-
-    if (track.importer && track.URL) {
-        if (self.importers[track.URL.path]) {
-            track.importer = self.importers[track.URL.path];
-        } else {
-            self.importers[track.URL.path] = track.importer;
-        }
-    }
-
-    if ([track isMemberOfClass:[MP42AudioTrack class]]) {
-        MP42AudioTrack *audioTrack = (MP42AudioTrack *)track;
-        MP42Track *fallbackTrack = audioTrack.fallbackTrack;
-        if (fallbackTrack && ![self.itracks containsObject:fallbackTrack]) {
-            audioTrack.fallbackTrack = nil;
-        }
-    }
-
-    if ([track isMemberOfClass:[MP42ChapterTrack class]]) {
-        track.duration = self.duration;
-    }
-
+    track.undo = self.undo;
+    [[self.undo prepareWithInvocationTarget:self] removeTracks:@[track]];
     [self.itracks addObject:track];
+}
+
+- (void)addToBeDeleted:(MP42Track *)track
+{
+    [[self.undo prepareWithInvocationTarget:self] removeFromToBeDeleted:track];
+    [_tracksToBeDeleted addObject:track];
+}
+
+- (void)removeFromToBeDeleted:(MP42Track *)track
+{
+    [[self.undo prepareWithInvocationTarget:self] addToBeDeleted:track];
+    [_tracksToBeDeleted removeObject:track];
 }
 
 - (void)removeTracks:(NSArray<MP42Track *> *)tracks {
     NSAssert(self.status != MP42StatusWriting, @"Unsupported operation: trying to remove a track while the file is open for writing");
 
-    for (MP42Track *track in tracks) {
-        // track is muxed, it needs to be removed from the file
-        if (track.muxed)
-            [_tracksToBeDeleted addObject:track];
-
-        // Remove the reference
-        for (MP42Track *ref in self.itracks) {
-            if ([ref isMemberOfClass:[MP42AudioTrack class]]) {
-                MP42AudioTrack *a = (MP42AudioTrack *)ref;
-                if (a.fallbackTrack == track)
-                    a.fallbackTrack = nil;
-                if (a.followsTrack == track)
-                    a.followsTrack = nil;
+    if (!(self.undo.isUndoing || self.undo.isRedoing)) {
+        for (MP42Track *track in tracks) {
+            if (track.muxed) {
+                [self addToBeDeleted:track];
             }
-            if ([ref isMemberOfClass:[MP42SubtitleTrack class]]) {
-                MP42SubtitleTrack *a = (MP42SubtitleTrack *)ref;
-                if (a.forcedTrack == track)
-                    a.forcedTrack = nil;
+            for (MP42Track *ref in self.itracks) {
+                if ([ref isMemberOfClass:[MP42AudioTrack class]]) {
+                    MP42AudioTrack *a = (MP42AudioTrack *)ref;
+                    if (a.fallbackTrack == track) a.fallbackTrack = nil;
+                    if (a.followsTrack == track) a.followsTrack = nil;
+                }
+                if ([ref isMemberOfClass:[MP42SubtitleTrack class]]) {
+                    MP42SubtitleTrack *a = (MP42SubtitleTrack *)ref;
+                    if (a.forcedTrack == track) a.forcedTrack = nil;
+                }
+            }
+            if (track.importer && track.URL) {
+                if (self.importers[track.URL.path]) {
+                    track.importer = self.importers[track.URL.path];
+                } else {
+                    self.importers[track.URL.path] = track.importer;
+                }
             }
         }
     }
+    // Preserve the original positions as well as the objects. The ordinary
+    // addTrack: method appends, which cannot restore a deleted middle track.
+    NSMutableArray<MP42Track *> *presentTracks = [NSMutableArray array];
+    NSMutableIndexSet *originalIndexes = [NSMutableIndexSet indexSet];
+    for (NSUInteger i = 0; i < self.itracks.count; i++) {
+        MP42Track *candidate = self.itracks[i];
+        for (MP42Track *removed in tracks) {
+            if (candidate == removed) {
+                [presentTracks addObject:candidate];
+                [originalIndexes addIndex:i];
+                break;
+            }
+        }
+    }
+    if (presentTracks.count) {
+        [(MP42File *)[self.undo prepareWithInvocationTarget:self]
+            restoreTracks:presentTracks atIndexes:originalIndexes];
+    }
+    [self.itracks removeObjectsInArray:presentTracks];
+}
 
-    [self.itracks removeObjectsInArray:tracks];
+// Undo counterpart of removeTracks:. Restore in ascending index order;
+// register one inverse operation so Redo deletes the same objects.
+- (void)restoreTracks:(NSArray<MP42Track *> *)tracks atIndexes:(NSIndexSet *)indexes {
+    NSAssert(self.status != MP42StatusWriting, @"Unsupported operation: restoring tracks while writing");
+    NSAssert(tracks.count == indexes.count, @"Track/index count mismatch");
+    [(MP42File *)[self.undo prepareWithInvocationTarget:self] removeTracks:tracks];
+    __block NSUInteger trackIndex = 0;
+    [indexes enumerateIndexesUsingBlock:^(NSUInteger index, BOOL *stop) {
+        MP42Track *track = tracks[trackIndex++];
+        track.undo = self.undo;
+        [self.itracks insertObject:track atIndex:MIN(index, self.itracks.count)];
+    }];
 }
 
 - (void)moveTrackAtIndex:(NSUInteger)index toIndex:(NSUInteger)newIndex {
@@ -1407,6 +1453,15 @@ MP42_OBJC_DIRECT_MEMBERS
 
 - (void)stopAccessingSecurityScopedResource {
     [self.URL stopAccessingSecurityScopedResource];
+}
+
+- (void)setUndo:(NSUndoManager *)undo {
+    _undo = undo;
+    self.metadata.undo = undo;
+
+    for (MP42Track *track in self.tracks) {
+        track.undo = undo;
+    }
 }
 
 @end

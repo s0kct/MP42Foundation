@@ -37,6 +37,8 @@ typedef void (^MP42FileProgressHandler)(double progress);
  */
 @interface MP42File : NSObject <NSSecureCoding, MP42SecurityScope>
 
+@property (nonatomic, strong, nullable) NSUndoManager *undo;
+
 + (void)setGlobalLogger:(id <MP42Logging>)logger;
 
 /**

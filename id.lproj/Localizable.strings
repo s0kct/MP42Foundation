@@ -1,0 +1,486 @@
+/* No comment provided by engineer. */
+"AAC" = "AAC";
+
+/* No comment provided by engineer. */
+"AC3" = "AC3";
+
+/* No comment provided by engineer. */
+"Acknowledgement" = "Ucapan Terima Kasih";
+
+/* No comment provided by engineer. */
+"Album" = "Album";
+
+/* No comment provided by engineer. */
+"Album Artist" = "Artis Album";
+
+/* No comment provided by engineer. */
+"Animation" = "Animation";
+
+/* No comment provided by engineer. */
+"Apple Lossless" = "Apple Lossless";
+
+/* No comment provided by engineer. */
+"Arranger" = "Aransemen";
+
+/* No comment provided by engineer. */
+"Art Director" = "Pengarah Artistik";
+
+/* No comment provided by engineer. */
+"Artist" = "Artis";
+
+/* No comment provided by engineer. */
+"artist ID" = "ID Artis";
+
+/* No comment provided by engineer. */
+"Atmos" = "Atmos";
+
+/* No comment provided by engineer. */
+"ATSC" = "ATSC";
+
+/* No comment provided by engineer. */
+"AV1" = "AV1";
+
+/* No comment provided by engineer. */
+"Cast" = "Pemeran";
+
+/* No comment provided by engineer. */
+"Category" = "Kategori";
+
+/* No comment provided by engineer. */
+"CEA-608" = "CEA-608";
+
+/* No comment provided by engineer. */
+"CEA-708" = "CEA-708";
+
+/* Default Chapter Track name */
+"Chapter Track" = "Trek Bab";
+
+/* No comment provided by engineer. */
+"Cinepak" = "Cinepak";
+
+/* No comment provided by engineer. */
+"Closed Caption Track" = "Trek Closed Caption";
+
+/* No comment provided by engineer. */
+"Codirector" = "Ko-sutradara";
+
+/* No comment provided by engineer. */
+"Comments" = "Komentar";
+
+/* No comment provided by engineer. */
+"Compilation" = "Kompilasi";
+
+/* No comment provided by engineer. */
+"Composer" = "Komposer";
+
+/* No comment provided by engineer. */
+"composer ID" = "ID Komposer";
+
+/* No comment provided by engineer. */
+"Conductor" = "Dirigen";
+
+/* No comment provided by engineer. */
+"content ID" = "ID Konten";
+
+/* No comment provided by engineer. */
+"Content Rating" = "Rating Konten";
+
+/* No comment provided by engineer. */
+"Copyright" = "Hak Cipta";
+
+/* No comment provided by engineer. */
+"Counter 32" = "Counter 32";
+
+/* No comment provided by engineer. */
+"Counter 64" = "Counter 64";
+
+/* No comment provided by engineer. */
+"Credits" = "Kredit";
+
+/* No comment provided by engineer. */
+"Description" = "Deskripsi";
+
+/* No comment provided by engineer. */
+"Director" = "Sutradara";
+
+/* No comment provided by engineer. */
+"Disk #" = "Disk #";
+
+/* No comment provided by engineer. */
+"DTS" = "DTS";
+
+/* No comment provided by engineer. */
+"DV NTSC" = "DV NTSC";
+
+/* No comment provided by engineer. */
+"DV PAL" = "DV PAL";
+
+/* No comment provided by engineer. */
+"DVC Pro PAL" = "DVC Pro PAL";
+
+/* No comment provided by engineer. */
+"E-AC3" = "E-AC3";
+
+/* No comment provided by engineer. */
+"Encoded By" = "Dienkode Oleh";
+
+/* No comment provided by engineer. */
+"Encoding Tool" = "Alat Enkode";
+
+/* No comment provided by engineer. */
+"Executive Producer" = "Produser Eksekutif";
+
+/* No comment provided by engineer. */
+"FairPlay AAC" = "FairPlay AAC";
+
+/* No comment provided by engineer. */
+"FairPlay AC3" = "FairPlay AC3";
+
+/* No comment provided by engineer. */
+"FairPlay CEA-608" = "FairPlay CEA-608";
+
+/* No comment provided by engineer. */
+"FairPlay Sound" = "FairPlay Sound";
+
+/* No comment provided by engineer. */
+"FairPlay Tx3g" = "FairPlay Tx3g";
+
+/* No comment provided by engineer. */
+"FairPlay Video" = "FairPlay Video";
+
+/* No comment provided by engineer. */
+"FLAC" = "FLAC";
+
+/* No comment provided by engineer. */
+"Gapless" = "Tanpa Jeda";
+
+/* No comment provided by engineer. */
+"Genre" = "Genre";
+
+/* No comment provided by engineer. */
+"genre ID" = "ID Genre";
+
+/* No comment provided by engineer. */
+"Grouping" = "Pengelompokan";
+
+/* No comment provided by engineer. */
+"H.263" = "H.263";
+
+/* No comment provided by engineer. */
+"H.264" = "H.264";
+
+/* No comment provided by engineer. */
+"H.264 (Parameter Sets in Bitstream)" = "H.264 (Parameter Sets in Bitstream)";
+
+/* No comment provided by engineer. */
+"HD Video" = "Video HD";
+
+/* No comment provided by engineer. */
+"HE-AAC" = "HE-AAC";
+
+/* No comment provided by engineer. */
+"HEVC" = "HEVC";
+
+/* No comment provided by engineer. */
+"HEVC (Parameter Sets in Bitstream)" = "HEVC (Parameter Sets in Bitstream)";
+
+/* No comment provided by engineer. */
+"Hint" = "Hint";
+
+/* No comment provided by engineer. */
+"Hint Track" = "Trek Petunjuk";
+
+/* No comment provided by engineer. */
+"iTunes Account" = "Akun iTunes";
+
+/* No comment provided by engineer. */
+"iTunes Account Type" = "Jenis Akun iTunes";
+
+/* No comment provided by engineer. */
+"iTunes Country" = "Negara iTunes";
+
+/* No comment provided by engineer. */
+"JPEG" = "JPEG";
+
+/* No comment provided by engineer. */
+"JPEG OpenDML" = "JPEG OpenDML";
+
+/* No comment provided by engineer. */
+"Keywords" = "Kata Kunci";
+
+/* No comment provided by engineer. */
+"Linear Notes" = "Catatan Linear";
+
+/* No comment provided by engineer. */
+"Long Description" = "Deskripsi Panjang";
+
+/* No comment provided by engineer. */
+"Lyricist" = "Penulis Lirik";
+
+/* No comment provided by engineer. */
+"Lyrics" = "Lyrics";
+
+/* No comment provided by engineer. */
+"Media Kind" = "Media Kind";
+
+/* No comment provided by engineer. */
+"Metadata Track" = "Metadata Trek";
+
+/* No comment provided by engineer. */
+"Movement Count" = "Movement Count";
+
+/* No comment provided by engineer. */
+"Movement Name" = "Movement Nama";
+
+/* No comment provided by engineer. */
+"Movement Number" = "Movement Number";
+
+/* No comment provided by engineer. */
+"MP1" = "MP1";
+
+/* No comment provided by engineer. */
+"MP2" = "MP2";
+
+/* No comment provided by engineer. */
+"MP3" = "MP3";
+
+/* No comment provided by engineer. */
+"MPEG-1 Video" = "MPEG-1 Video";
+
+/* No comment provided by engineer. */
+"MPEG-2 Video" = "MPEG-2 Video";
+
+/* No comment provided by engineer. */
+"MPEG-4 Control" = "MPEG-4 Control";
+
+/* No comment provided by engineer. */
+"MPEG-4 Control Track" = "MPEG-4 Control Trek";
+
+/* No comment provided by engineer. */
+"MPEG-4 ODSM" = "MPEG-4 ODSM";
+
+/* No comment provided by engineer. */
+"MPEG-4 ODSM Track" = "MPEG-4 ODSM Trek";
+
+/* No comment provided by engineer. */
+"MPEG-4 SDSM" = "MPEG-4 SDSM";
+
+/* No comment provided by engineer. */
+"MPEG-4 SDSM Track" = "MPEG-4 SDSM Trek";
+
+/* No comment provided by engineer. */
+"MPEG-4 Visual" = "MPEG-4 Visual";
+
+/* No comment provided by engineer. */
+"Muxed Track" = "Muxed Trek";
+
+/* No comment provided by engineer. */
+"Name" = "Nama";
+
+/* No comment provided by engineer. */
+"Online Extras" = "Online Extras";
+
+/* No comment provided by engineer. */
+"Opus" = "Opus";
+
+/* No comment provided by engineer. */
+"Original Artist" = "Original Artist";
+
+/* No comment provided by engineer. */
+"PCM" = "PCM";
+
+/* No comment provided by engineer. */
+"Performer" = "Performer";
+
+/* No comment provided by engineer. */
+"PGS" = "PGS";
+
+/* No comment provided by engineer. */
+"Phonogram Rights" = "Phonogram Rights";
+
+/* No comment provided by engineer. */
+"playlist ID" = "playlist ID";
+
+/* No comment provided by engineer. */
+"PNG" = "PNG";
+
+/* No comment provided by engineer. */
+"Podcast" = "Podcast";
+
+/* No comment provided by engineer. */
+"Producers" = "Produser";
+
+/* No comment provided by engineer. */
+"ProRes 422" = "ProRes 422";
+
+/* No comment provided by engineer. */
+"ProRes 422 HQ" = "ProRes 422 HQ";
+
+/* No comment provided by engineer. */
+"ProRes 422 LT" = "ProRes 422 LT";
+
+/* No comment provided by engineer. */
+"ProRes 422 Proxy" = "ProRes 422 Proxy";
+
+/* No comment provided by engineer. */
+"ProRes 4444" = "ProRes 4444";
+
+/* No comment provided by engineer. */
+"Publisher" = "Publisher";
+
+/* No comment provided by engineer. */
+"Purchase Date" = "Tanggal Pembelian";
+
+/* No comment provided by engineer. */
+"Rating" = "Rating";
+
+/* No comment provided by engineer. */
+"Rating Annotation" = "Rating Annotation";
+
+/* No comment provided by engineer. */
+"Record Company" = "Record Company";
+
+/* No comment provided by engineer. */
+"Release Date" = "Tanggal Rilis";
+
+/* No comment provided by engineer. */
+"Screenwriters" = "Penulis Skenario";
+
+/* No comment provided by engineer. */
+"Series Description" = "Series Description";
+
+/* No comment provided by engineer. */
+"Show Work And Movement" = "Show Work And Movement";
+
+/* No comment provided by engineer. */
+"Soloist" = "Soloist";
+
+/* No comment provided by engineer. */
+"Song Description" = "Song Description";
+
+/* No comment provided by engineer. */
+"Song Producer" = "Song Producer";
+
+/* No comment provided by engineer. */
+"Sorenson Video" = "Sorenson Video";
+
+/* No comment provided by engineer. */
+"Sorenson Video 3" = "Sorenson Video 3";
+
+/* No comment provided by engineer. */
+"Sort Album" = "Album Urut";
+
+/* No comment provided by engineer. */
+"Sort Album Artist" = "Artis Album Urut";
+
+/* No comment provided by engineer. */
+"Sort Artist" = "Artis Urut";
+
+/* No comment provided by engineer. */
+"Sort Composer" = "Komposer Urut";
+
+/* No comment provided by engineer. */
+"Sort Name" = "Nama Urut";
+
+/* No comment provided by engineer. */
+"Sort TV Show" = "Acara TV Urut";
+
+/* No comment provided by engineer. */
+"Sound Engineer" = "Sound Engineer";
+
+/* No comment provided by engineer. */
+"Sound Track" = "Sound Trek";
+
+/* No comment provided by engineer. */
+"SSA" = "SSA";
+
+/* No comment provided by engineer. */
+"Studio" = "Studio";
+
+/* No comment provided by engineer. */
+"Subtitle Track" = "Subjudul Trek";
+
+/* No comment provided by engineer. */
+"Tempo" = "Tempo";
+
+/* No comment provided by engineer. */
+"Text" = "Text";
+
+/* No comment provided by engineer. */
+"Text Track" = "Text Trek";
+
+/* No comment provided by engineer. */
+"Thanks" = "Thanks";
+
+/* No comment provided by engineer. */
+"Theora" = "Theora";
+
+/* No comment provided by engineer. */
+"TimeCode" = "TimeCode";
+
+/* No comment provided by engineer. */
+"TimeCode 64" = "TimeCode 64";
+
+/* No comment provided by engineer. */
+"TimeCode Track" = "TimeCode Trek";
+
+/* No comment provided by engineer. */
+"Timed Metadata" = "Timed Metadata";
+
+/* No comment provided by engineer. */
+"Track #" = "Trek #";
+
+/* No comment provided by engineer. */
+"Track Sub-Title" = "Trek Sub-Judul";
+
+/* No comment provided by engineer. */
+"True Audio" = "True Audio";
+
+/* No comment provided by engineer. */
+"True HD" = "True HD";
+
+/* No comment provided by engineer. */
+"TV Episode #" = "Episode TV #";
+
+/* No comment provided by engineer. */
+"TV Episode ID" = "ID Episode TV";
+
+/* No comment provided by engineer. */
+"TV Network" = "Jaringan TV";
+
+/* No comment provided by engineer. */
+"TV Season" = "Musim TV";
+
+/* No comment provided by engineer. */
+"TV Show" = "Acara TV";
+
+/* No comment provided by engineer. */
+"Tx3g" = "Tx3g";
+
+/* No comment provided by engineer. */
+"Video Track" = "Video Trek";
+
+/* No comment provided by engineer. */
+"VobSub" = "VobSub";
+
+/* No comment provided by engineer. */
+"Vorbis" = "Vorbis";
+
+/* No comment provided by engineer. */
+"VP8" = "VP8";
+
+/* No comment provided by engineer. */
+"VP9" = "VP9";
+
+/* No comment provided by engineer. */
+"WebVTT" = "WebVTT";
+
+/* No comment provided by engineer. */
+"Work Name" = "Work Nama";
+
+/* No comment provided by engineer. */
+"XAVC Long GOP" = "XAVC Long GOP";
+
+/* No comment provided by engineer. */
+"XID" = "XID";
+

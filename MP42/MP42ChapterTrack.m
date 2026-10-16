@@ -12,7 +12,6 @@
 #import "MP42PrivateUtilities.h"
 #import "MP42MediaFormat.h"
 
-MP42_OBJC_DIRECT_MEMBERS
 @implementation MP42ChapterTrack {
 @private
     NSMutableArray<MP42TextSample *> *_chapters;
@@ -109,12 +108,14 @@ MP42_OBJC_DIRECT_MEMBERS
 
 - (NSUInteger)addChapter:(MP42TextSample *)chapter
 {
-    self.edited = YES;
-    _areChaptersEdited = YES;
-
+    NSUndoManager *undoManager = self.undo;
     [_chapters addObject:chapter];
     [_chapters sortUsingSelector:@selector(compare:)];
-
+    [[undoManager prepareWithInvocationTarget:self] removeChapter:chapter];
+    if (!(undoManager.isUndoing || undoManager.isRedoing)) {
+        self.edited = YES;
+        _areChaptersEdited = YES;
+    }
     return [_chapters indexOfObject:chapter];
 }
 
@@ -144,6 +145,17 @@ MP42_OBJC_DIRECT_MEMBERS
     return [_chapters indexOfObject:chapterSample];
 }
 
+- (void)removeChapter:(MP42TextSample *)chapter
+{
+    NSUndoManager *undoManager = self.undo;
+    [[undoManager prepareWithInvocationTarget:self] addChapter:chapter];
+    [_chapters removeObject:chapter];
+    if (!(undoManager.isUndoing || undoManager.isRedoing)) {
+        self.edited = YES;
+        _areChaptersEdited = YES;
+    }
+}
+
 - (void)removeChapterAtIndex:(NSUInteger)index
 {
     [self removeChaptersAtIndexes:[NSIndexSet indexSetWithIndex:index]];
@@ -151,24 +163,39 @@ MP42_OBJC_DIRECT_MEMBERS
 
 - (void)removeChaptersAtIndexes:(NSIndexSet *)indexes
 {
-    self.edited = YES;
-    _areChaptersEdited = YES;
-    [_chapters removeObjectsAtIndexes:indexes];
+    NSArray<MP42TextSample *> *toBeRemoved = [_chapters objectsAtIndexes:indexes];
+    for (MP42TextSample *chapter in toBeRemoved) {
+        [self removeChapter:chapter];
+    }
 }
 
 - (void)setTimestamp:(MP4Duration)timestamp forChapter:(MP42TextSample *)chapterSample
 {
-    self.edited = YES;
-    _areChaptersEdited = YES;
+    NSUndoManager *undoManager = self.undo;
+    MP4Duration previousTimestamp = chapterSample.timestamp;
+    if (previousTimestamp != timestamp) {
+        [[undoManager prepareWithInvocationTarget:self] setTimestamp:previousTimestamp forChapter:chapterSample];
+    }
     [chapterSample setTimestamp:timestamp];
     [_chapters sortUsingSelector:@selector(compare:)];
+    if (!(undoManager.isUndoing || undoManager.isRedoing)) {
+        self.edited = YES;
+        _areChaptersEdited = YES;
+    }
 }
 
 - (void)setTitle:(NSString *)title forChapter:(MP42TextSample *)chapterSample
 {
-    self.edited = YES;
-    _areChaptersEdited = YES;
+    NSUndoManager *undoManager = self.undo;
+    NSString *previousTitle = chapterSample.title;
+    if (![previousTitle isEqualToString:title]) {
+        [[undoManager prepareWithInvocationTarget:self] setTitle:previousTitle forChapter:chapterSample];
+    }
     [chapterSample setTitle:title];
+    if (!(undoManager.isUndoing || undoManager.isRedoing)) {
+        self.edited = YES;
+        _areChaptersEdited = YES;
+    }
 }
 
 - (MP42TextSample *)chapterAtIndex:(NSUInteger)index
@@ -192,7 +219,7 @@ MP42_OBJC_DIRECT_MEMBERS
 
         MP4TrackId refTrack = findFirstVideoTrack(fileHandle);
         if (!refTrack) {
-            refTrack = 1; 
+            refTrack = 1;
         }
 
         chapterCount = (uint32_t)_chapters.count;
@@ -279,15 +306,15 @@ MP42_OBJC_DIRECT_MEMBERS
 
 - (BOOL)exportToURL:(NSURL *)url error:(NSError * __autoreleasing *)error
 {
-	NSMutableString *file = [[NSMutableString alloc] init];
-	NSUInteger x = 0;
+    NSMutableString *file = [[NSMutableString alloc] init];
+    NSUInteger x = 0;
 
-	for (MP42TextSample *chapter in _chapters) {
-		[file appendFormat:@"CHAPTER%02lu=%@\nCHAPTER%02luNAME=%@\n", (unsigned long)x, SRTStringFromTime([chapter timestamp], 1000, '.'), (unsigned long)x, [chapter title]];
-		x++;
-	}
+    for (MP42TextSample *chapter in _chapters) {
+        [file appendFormat:@"CHAPTER%02lu=%@\nCHAPTER%02luNAME=%@\n", (unsigned long)x, SRTStringFromTime([chapter timestamp], 1000, '.'), (unsigned long)x, [chapter title]];
+        x++;
+    }
 
-	return [file writeToURL:url atomically:YES encoding:NSUTF8StringEncoding error:error];
+    return [file writeToURL:url atomically:YES encoding:NSUTF8StringEncoding error:error];
 }
 
 - (BOOL)updateFromCSVFile:(NSURL *)URL error:(NSError * __autoreleasing *)outError {

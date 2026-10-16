@@ -46,6 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, readwrite) uint64_t alternateGroup;
 @property(nonatomic, readwrite) NSTimeInterval startOffset;
+@property(nonatomic, weak, nullable) NSUndoManager *undo;
 
 @property(nonatomic, readwrite, copy, nullable) MP42ConversionSettings *conversionSettings;
 

@@ -35,6 +35,7 @@ static NSArray<Class> *_fileImporters;
 
 /// The supporter file extentions.
 static NSArray<NSString *> *_supportedFileFormats;
+static NSArray<UTType *> *_supportedContentTypes API_AVAILABLE(macos(11.0));
 
 @implementation MP42FileImporter {
     NSMutableArray<MP42Track *> *_tracksArray;
@@ -70,6 +71,17 @@ static NSArray<NSString *> *_supportedFileFormats;
         }
 
         _supportedFileFormats = [formats copy];
+        
+        if (@available(macOS 11, *)) {
+            NSMutableArray<UTType *> *contentTypes = [[NSMutableArray alloc] init];
+
+            for (Class c in _fileImporters) {
+                [contentTypes addObjectsFromArray:[c supportedContentTypes]];
+            }
+
+            _supportedContentTypes = [contentTypes copy];
+        }
+        
     }
 }
 
@@ -79,6 +91,22 @@ static NSArray<NSString *> *_supportedFileFormats;
 
 + (BOOL)canInitWithFileType:(NSString *)fileType {
     return [[self supportedFileFormats] containsObject:fileType.lowercaseString];
+}
+
++ (NSArray<UTType *> *)supportedContentTypes API_AVAILABLE(macos(11.0))
+{
+    return _supportedContentTypes;
+}
+
++ (BOOL)canInitWithContentType:(UTType *)contentType API_AVAILABLE(macos(11.0))
+{
+    for (UTType *type in _supportedContentTypes) {
+        if ([contentType conformsToType:type]) {
+            return YES;
+        }
+    }
+
+    return NO;
 }
 
 - (instancetype)initWithURL:(NSURL *)fileURL error:(NSError * __autoreleasing *)error

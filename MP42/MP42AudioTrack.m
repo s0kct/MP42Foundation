@@ -25,7 +25,7 @@ MP42_OBJC_DIRECT_MEMBERS
     if (self) {
         MP4GetTrackFloatProperty(fileHandle, self.trackId, "tkhd.volume", &_volume);
         const char *dataName = MP4GetTrackMediaDataName(fileHandle, self.trackId, 0);
-		_extensionType = kMP42AudioEmbeddedExtension_None;
+        _extensionType = kMP42AudioEmbeddedExtension_None;
 
         if (dataName && !strcmp(dataName, "mp4a")) {
             u_int8_t audioType = MP4GetTrackEsdsObjectTypeId(fileHandle, self.trackId);
@@ -80,8 +80,8 @@ MP42_OBJC_DIRECT_MEMBERS
             uint8_t    *ppValue;
             uint32_t    pValueSize;
             UInt8       complexityIndex, extensionType;
-			MP4GetTrackBytesProperty(fileHandle, self.trackId, "mdia.minf.stbl.stsd.ec-3.dec3.content", &ppValue, &pValueSize);
-			readEAC3Config(ppValue, pValueSize, &_channels, &_channelLayoutTag, &extensionType, &complexityIndex);
+            MP4GetTrackBytesProperty(fileHandle, self.trackId, "mdia.minf.stbl.stsd.ec-3.dec3.content", &ppValue, &pValueSize);
+            readEAC3Config(ppValue, pValueSize, &_channels, &_channelLayoutTag, &extensionType, &complexityIndex);
             if (extensionType == EC3Extension_JOC) {
                 _extensionType = kMP42AudioEmbeddedExtension_JOC;
             }
@@ -223,6 +223,11 @@ MP42_OBJC_DIRECT_MEMBERS
 
 - (void)setFallbackTrack:(MP42Track *)newFallbackTrack
 {
+    MP42Track *fallbackTrackStrongRef = _fallbackTrack;
+    if (fallbackTrackStrongRef != newFallbackTrack) {
+        [[self.undo prepareWithInvocationTarget:self] setFallbackTrack:fallbackTrackStrongRef];
+    }
+
     _fallbackTrack = newFallbackTrack;
     _fallbackTrackId = 0;
     self.edited = YES;
@@ -231,6 +236,11 @@ MP42_OBJC_DIRECT_MEMBERS
 
 - (void)setFollowsTrack:(MP42Track *)newFollowsTrack
 {
+    MP42Track *followsTrackStrongRef = _followsTrack;
+    if (followsTrackStrongRef != newFollowsTrack) {
+        [[self.undo prepareWithInvocationTarget:self] setFollowsTrack:followsTrackStrongRef];
+    }
+
     _followsTrack = newFollowsTrack;
     _followsTrackId = 0;
     self.edited = YES;
@@ -260,7 +270,7 @@ MP42_OBJC_DIRECT_MEMBERS
                         localizedDisplayName(self.mediaType, self.extensionType),
                         (unsigned int)_channels];
             } else {
-				return [NSString stringWithFormat:@"%@, %u ch", localizedDisplayName(self.mediaType, self.format), (unsigned int)_channels];
+                return [NSString stringWithFormat:@"%@, %u ch", localizedDisplayName(self.mediaType, self.format), (unsigned int)_channels];
             }
         }
         else {

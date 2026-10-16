@@ -68,9 +68,9 @@ typedef struct muxer_helper {
 
 - (instancetype)initWithSourceURL:(NSURL *)URL trackID:(MP42TrackId)trackID fileHandle:(MP4FileHandle)fileHandle
 {
-	if ((self = [super init])) {
+    if ((self = [super init])) {
         _URL = URL;
-		_trackId = (MP4TrackId)trackID;
+        _trackId = (MP4TrackId)trackID;
         _edited = NO;
         _muxed = YES;
         _updatedProperty = [[NSMutableDictionary alloc] init];
@@ -85,14 +85,24 @@ typedef struct muxer_helper {
             }
 
             // Extended language tag
+            NSString *mdhdLanguage = [MP42Languages.defaultManager extendedTagForISO_639_2:getTrackLanguage(fileHandle, _trackId)];
             if (MP4HaveTrackAtom(fileHandle, _trackId, "mdia.elng.")) {
                 const char *elng;
                 if (MP4GetTrackStringProperty(fileHandle, _trackId, "mdia.elng.extended_language", &elng)) {
                     _language = [NSString stringWithCString:elng encoding:NSASCIIStringEncoding];
+                    if ([_language isEqualToString:@"und"] && ![mdhdLanguage isEqualToString:@"und"]) {
+                        _language = mdhdLanguage;
+                        _edited = YES;
+                        _updatedProperty[@"language"] = @YES;
+                    }
+                    else if (![_language isEqualToString:@"und"] && [mdhdLanguage isEqualToString:@"und"]) {
+                        _edited = YES;
+                        _updatedProperty[@"language"] = @YES;
+                    }
                 }
             }
             else {
-                _language = [MP42Languages.defaultManager extendedTagForISO_639_2:getTrackLanguage(fileHandle, _trackId)];
+                _language = mdhdLanguage;
             }
 
             _timescale = MP4GetTrackTimeScale(fileHandle, _trackId);
@@ -141,7 +151,7 @@ typedef struct muxer_helper {
 
             _mediaCharacteristicTags = [mediaCharacteristicTags copy];
         }
-	}
+    }
 
     return self;
 }
@@ -275,28 +285,30 @@ typedef struct muxer_helper {
 
 - (void)setName:(NSString *)newName
 {
-    if (newName.length) {
-        _name = [newName copy];
-    }
-    else {
-        _name = [self defaultName];
-    }
-
+    NSString *resolvedName = newName.length ? [newName copy] : [self defaultName];
+    if ([_name isEqualToString:resolvedName]) return;
+    NSString *previous = [self.name copy];
+    [self.undo registerUndoWithTarget:self handler:^(MP42Track *track) { track.name = previous; }];
+    _name = [resolvedName copy];
     self.edited = YES;
     _updatedProperty[@"name"] = @YES;
-
 }
 
 - (void)setLanguage:(NSString *)newLang
 {
+    if ([_language isEqualToString:newLang]) return;
+    NSString *previous = [_language copy];
+    [self.undo registerUndoWithTarget:self handler:^(MP42Track *track) { track.language = previous; }];
     _language = [newLang copy];
     self.edited = YES;
     _updatedProperty[@"language"] = @YES;
-
 }
 
 - (void)setMediaCharacteristicTags:(NSSet<NSString *> *)mediaCharacteristicTags
 {
+    if ([_mediaCharacteristicTags isEqualToSet:mediaCharacteristicTags]) return;
+    NSSet<NSString *> *previous = [_mediaCharacteristicTags copy];
+    [self.undo registerUndoWithTarget:self handler:^(MP42Track *track) { track.mediaCharacteristicTags = previous; }];
     _mediaCharacteristicTags = [mediaCharacteristicTags copy];
     self.edited = YES;
     _updatedProperty[@"mediaCharacteristicTags"] = @YES;
@@ -304,15 +316,17 @@ typedef struct muxer_helper {
 
 - (void)setEnabled:(BOOL)newState
 {
-    if (_enabled != newState) {
-        _enabled = newState;
-        self.edited = YES;
-        _updatedProperty[@"enabled"] = @YES;
-    }
+    if (_enabled == newState) return;
+    [[self.undo prepareWithInvocationTarget:self] setEnabled:_enabled];
+    _enabled = newState;
+    self.edited = YES;
+    _updatedProperty[@"enabled"] = @YES;
 }
 
 - (void)setAlternateGroup:(uint64_t)newGroup
 {
+    if (_alternateGroup == newGroup) return;
+    [[self.undo prepareWithInvocationTarget:self] setAlternateGroup:_alternateGroup];
     _alternateGroup = newGroup;
     self.edited = YES;
     _updatedProperty[@"alternate_group"] = @YES;
@@ -320,6 +334,8 @@ typedef struct muxer_helper {
 
 - (void)setStartOffset:(NSTimeInterval)newOffset
 {
+    if (_startOffset == newOffset) return;
+    [[self.undo prepareWithInvocationTarget:self] setStartOffset:_startOffset];
     _startOffset = newOffset;
     self.edited = YES;
     _updatedProperty[@"start_offset"] = @YES;
