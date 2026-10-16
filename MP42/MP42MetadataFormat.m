@@ -300,6 +300,9 @@ NSString *localizedMetadataKeyName(NSString *key)
                 NSLocalizedStringFromTableInBundle(@"MGS Product ID", @"Localizable", bundle, nil),
             MP42MetadataKeyMGSContentURL:
                 NSLocalizedStringFromTableInBundle(@"MGS Content URL", @"Localizable", bundle, nil),
+            MP42MetadataKeyAdultWikiContentID: @"Adult-Wiki Content ID",
+            MP42MetadataKeyAdultWikiProductID: @"Adult-Wiki Product ID",
+            MP42MetadataKeyAdultWikiContentURL: @"Adult-Wiki Content URL",
 
             // MARK: DMM Extended Metadata
 
@@ -794,6 +797,10 @@ NSString *const MP42MetadataKeyFANZAContentURL =
 NSString *const MP42MetadataKeyMGSContentID = @"MGS Content ID";
 NSString *const MP42MetadataKeyMGSProductID = @"MGS Product ID";
 NSString *const MP42MetadataKeyMGSContentURL = @"MGS Content URL";
+
+NSString *const MP42MetadataKeyAdultWikiContentID = @"Adult-Wiki Content ID";
+NSString *const MP42MetadataKeyAdultWikiProductID = @"Adult-Wiki Product ID";
+NSString *const MP42MetadataKeyAdultWikiContentURL = @"Adult-Wiki Content URL";
 
 // MARK: - DMM Extended Metadata
 
