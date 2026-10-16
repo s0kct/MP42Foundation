@@ -215,6 +215,9 @@
         MP42MetadataKeyMGSContentID,
         MP42MetadataKeyMGSProductID,
         MP42MetadataKeyMGSContentURL,
+        MP42MetadataKeyAdultWikiContentID,
+        MP42MetadataKeyAdultWikiProductID,
+        MP42MetadataKeyAdultWikiContentURL,
         MP42MetadataKeyDMMContentID,
         MP42MetadataKeyDMMProductID,
         MP42MetadataKeyDMMContentURL,
@@ -426,6 +429,9 @@
         MP42MetadataKeyMGSContentID,
         MP42MetadataKeyMGSProductID,
         MP42MetadataKeyMGSContentURL,
+        MP42MetadataKeyAdultWikiContentID,
+        MP42MetadataKeyAdultWikiProductID,
+        MP42MetadataKeyAdultWikiContentURL,
         MP42MetadataKeyDMMContentID,
         MP42MetadataKeyDMMProductID,
         MP42MetadataKeyDMMContentURL,
@@ -1126,6 +1132,9 @@
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyMGSContentID name:"MGSContentID"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyMGSProductID name:"MGSProductID"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyMGSContentURL name:"MGSContentURL"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyAdultWikiContentID name:"AdultWikiContentID"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyAdultWikiProductID name:"AdultWikiProductID"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyAdultWikiContentURL name:"AdultWikiContentURL"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyDMMContentID name:"DMMContentID"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyDMMProductID name:"DMMProductID"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyDMMContentURL name:"DMMContentURL"];
@@ -2047,6 +2056,9 @@
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyMGSContentID name:"MGSContentID"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyMGSProductID name:"MGSProductID"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyMGSContentURL name:"MGSContentURL"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyAdultWikiContentID name:"AdultWikiContentID"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyAdultWikiProductID name:"AdultWikiProductID"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyAdultWikiContentURL name:"AdultWikiContentURL"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyDMMContentID name:"DMMContentID"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyDMMProductID name:"DMMProductID"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyDMMContentURL name:"DMMContentURL"];

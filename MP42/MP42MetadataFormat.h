@@ -179,7 +179,12 @@ extern NSString *const MP42MetadataKeyFANZAContentURL;         // String
 // MGS Extended Metadata keys
 extern NSString *const MP42MetadataKeyMGSContentID;            // String
 extern NSString *const MP42MetadataKeyMGSProductID;            // String
-extern NSString *const MP42MetadataKeyMGSContentURL;           // String
+extern NSString *const MP42MetadataKeyMGSContentURL;
+
+// Adult-Wiki Extended Metadata keys
+extern NSString *const MP42MetadataKeyAdultWikiContentID;
+extern NSString *const MP42MetadataKeyAdultWikiProductID;
+extern NSString *const MP42MetadataKeyAdultWikiContentURL;           // String
 
 // DMM Extended Metadata keys
 extern NSString *const MP42MetadataKeyDMMContentID;            // String
