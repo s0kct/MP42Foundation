@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import <MP42Foundation/MP42Utilities.h>
+#import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 
 @class MP42SampleBuffer;
 @class MP42AudioTrack;
@@ -23,6 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSArray<NSString *> *)supportedFileFormats;
 + (BOOL)canInitWithFileType:(NSString *)fileType;
+
++ (NSArray<UTType *> *)supportedContentTypes API_AVAILABLE(macos(11.0));
++ (BOOL)canInitWithContentType:(UTType *)contentType API_AVAILABLE(macos(11.0));
 
 - (nullable instancetype)initWithURL:(NSURL *)fileURL error:(NSError * __autoreleasing *)error;
 

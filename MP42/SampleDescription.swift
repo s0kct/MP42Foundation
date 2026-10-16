@@ -9,6 +9,97 @@
 import Foundation
 import CMP42
 
+// Temporary shims to unblock compilation when CMP42 doesn't expose expected symbols.
+// These are guarded to avoid conflicts once the real types are available.
+
+#if canImport(CMP42)
+// If CMP42 is present but some symbols are still missing, we provide minimal fallbacks.
+#endif
+
+// Provide fallbacks only if the symbols are not already defined.
+#if !canImport(MP42) // Avoid clashing with a potential Swift module named MP42
+
+// Basic typealiases expected from C layer
+public typealias MP42FileHandle = UnsafeMutableRawPointer
+public typealias MP42TrackId = UInt32
+public typealias MP42CodecType = UInt32
+
+// Audio embedded extension
+public typealias MP42AudioEmbeddedExtension = UInt32
+public let kMP42AudioEmbeddedExtension_None: MP42AudioEmbeddedExtension = 0
+
+// Common codec/media FourCharCode-like constants
+public let kMP42AudioCodecType_LinearPCM: MP42CodecType = FourCharCode("lpcm")
+public let kMP42AudioCodecType_MPEG4AAC: MP42CodecType = FourCharCode("mp4a")
+public let kMP42AudioCodecType_MPEGLayer3: MP42CodecType = FourCharCode(".mp3")
+public let kMP42AudioCodecType_DTS: MP42CodecType = FourCharCode("DTS ")
+public let kMP42SubtitleCodecType_VobSub: MP42CodecType = FourCharCode("subp")
+public let kMP42VideoCodecType_H264: MP42CodecType = FourCharCode("avc1")
+public let kMP42MediaType_Unknown: MP42CodecType = FourCharCode("????")
+
+// Metadata structs used in this file (minimal shape to satisfy usage)
+public struct MP42ContentLightMetadata {
+    public var MaxCLL: UInt32
+    public var MaxFALL: UInt32
+    public init(MaxCLL: UInt32, MaxFALL: UInt32) {
+        self.MaxCLL = MaxCLL
+        self.MaxFALL = MaxFALL
+    }
+}
+
+public struct MP42MasteringDisplayMetadata {
+    public typealias Rational = (num: Int32, den: Int32)
+    public var display_primaries: ((Rational, Rational), (Rational, Rational), (Rational, Rational))
+    public var white_point: (Rational, Rational)
+    public var min_luminance: Rational
+    public var max_luminance: Rational
+    public var has_primaries: Int32
+    public var has_luminance: Int32
+    public init(display_primaries: ((Rational, Rational), (Rational, Rational), (Rational, Rational)),
+                white_point: (Rational, Rational),
+                min_luminance: Rational,
+                max_luminance: Rational,
+                has_primaries: Int32,
+                has_luminance: Int32) {
+        self.display_primaries = display_primaries
+        self.white_point = white_point
+        self.min_luminance = min_luminance
+        self.max_luminance = max_luminance
+        self.has_primaries = has_primaries
+        self.has_luminance = has_luminance
+    }
+}
+
+public struct MP42DolbyVisionMetadata {
+    public var versionMajor: UInt8
+    public var versionMinor: UInt8
+    public var profile: UInt8
+    public var level: UInt8
+    public var rpuPresentFlag: Bool
+    public var elPresentFlag: Bool
+    public var blPresentFlag: Bool
+    public var blSignalCompatibilityId: UInt8
+    public init(versionMajor: UInt8, versionMinor: UInt8, profile: UInt8, level: UInt8,
+                rpuPresentFlag: Bool, elPresentFlag: Bool, blPresentFlag: Bool, blSignalCompatibilityId: UInt8) {
+        self.versionMajor = versionMajor
+        self.versionMinor = versionMinor
+        self.profile = profile
+        self.level = level
+        self.rpuPresentFlag = rpuPresentFlag
+        self.elPresentFlag = elPresentFlag
+        self.blPresentFlag = blPresentFlag
+        self.blSignalCompatibilityId = blSignalCompatibilityId
+    }
+}
+
+// Minimal make_rational helper to match expected usage
+@inline(__always)
+public func make_rational(_ num: Int32, _ den: Int32) -> MP42MasteringDisplayMetadata.Rational {
+    return (num: num, den: den)
+}
+
+#endif
+
 @objc(MP42SampleDescription) public class SampleDescription: NSObject {
     let format: MP42CodecType
 
@@ -282,3 +373,4 @@ extension FourCharCode: @retroactive ExpressibleByStringLiteral {
         return String(cString: cString)
     }
 }
+

@@ -231,7 +231,7 @@ unsigned ParseSubTime(const char *time, unsigned secondScale, BOOL hasSign)
 	return timeval * sign;
 }
 
-NSMutableString *STStandardizeStringNewlines(NSString *str)
+NSMutableString * _Nullable STStandardizeStringNewlines(NSString *str)
 {
     if(str == nil)
 		return nil;
@@ -241,7 +241,7 @@ NSMutableString *STStandardizeStringNewlines(NSString *str)
 	return ms;
 }
 
-extern NSString *STLoadFileWithUnknownEncoding(NSURL *url)
+NSString * _Nullable STLoadFileWithUnknownEncoding(NSURL *url)
 {
 	NSData *data = [NSData dataWithContentsOfURL:url];
 
@@ -343,13 +343,17 @@ int LoadSRTFromURL(NSURL *url, MP42SubSerializer *ss, MP4Duration *duration)
 
 				state = LINES;
 				break;
-			case LINES:
-				[sc scanUpToString:@"\n\n" intoString:&res];
-				[sc scanString:@"\n\n" intoString:nil];
-				MP42SubLine *sl = [[MP42SubLine alloc] initWithLine:res start:startTime end:endTime top_pos:position forced:forced];
-				[ss addLine:sl];
-				state = INITIAL;
-				break;
+            case LINES:
+                res = @"";
+                [sc scanUpToString:@"\n\n" intoString:&res];
+                [sc scanString:@"\n\n" intoString:nil];
+                if (res.length)
+                {
+                    MP42SubLine *sl = [[MP42SubLine alloc] initWithLine:res start:startTime end:endTime top_pos:position forced:forced];
+                    [ss addLine:sl];
+                }
+                state = INITIAL;
+                break;
 		};
 	} while (![sc isAtEnd]);
 

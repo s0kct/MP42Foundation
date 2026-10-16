@@ -11,6 +11,8 @@
 #import "MP42PrivateUtilities.h"
 #import "MP42MediaFormat.h"
 #import "MP42HtmlParser.h"
+
+@class MP42SampleCursor;
 #import "MP42-Shared-Swift.h"
 
 
@@ -34,18 +36,14 @@ MP42_OBJC_DIRECT_MEMBERS
             uint64_t displayFlags = 0;
             MP4GetTrackIntegerProperty(fileHandle, self.trackId, "mdia.minf.stbl.stsd.tx3g.displayFlags", &displayFlags);
 
-            if (displayFlags) {
-                if ((displayFlags & 0x20000000) == 0x20000000) {
-                    _verticalPlacement = YES;
-                }
-
-                if ((displayFlags & 0x40000000) == 0x40000000) {
-                    _someSamplesAreForced = YES;
-                }
-
-                if ((displayFlags & 0x80000000) == 0x80000000) {
-                    _allSamplesAreForced = YES;
-                }
+            if (displayFlags & 0x20000000) {
+                _verticalPlacement = YES;
+            }
+            if (displayFlags & 0x40000000) {
+                _someSamplesAreForced = YES;
+            }
+            if (displayFlags & 0x80000000) {
+                _allSamplesAreForced = YES;
             }
         }
 
@@ -267,13 +265,13 @@ static void insertTagsFromStyleRecord(style_record record, NSMutableString *samp
         // Let's see if there is an atom after the text sample
         pos = textSampleLength + 2;
 
-        while (pos + 8 < numBytes && sampleText) {
+        while (pos + 8 < (uint64_t)numBytes && sampleText) {
             uint8_t *styleAtoms = pBytes + pos;
             size_t atomLength = ((styleAtoms[0] << 24) & 0xff000000) + ((styleAtoms[1] << 16) & 0xff0000) + ((styleAtoms[2] << 8) & 0xff00) + styleAtoms[3];
 
             pos += atomLength;
 
-            if (pos <= numBytes) {
+            if (pos <= (uint64_t)numBytes) {
                 // If we found a style atom, read it and insert html-like tags in the new file
                 if (styleAtoms[4] == 's' && styleAtoms[5] == 't' && styleAtoms[6] == 'y' && styleAtoms[7] == 'l') {
                     uint16_t styleCount = ((styleAtoms[8] << 8) & 0xff00) + styleAtoms[9];
@@ -281,7 +279,7 @@ static void insertTagsFromStyleRecord(style_record record, NSMutableString *samp
                     uint8_t numberOfInsertedChars = 0;
 
                     uint8_t styles = 0;
-                    uint64_t endChar = [sampleText length];
+                    uint64_t endChar = (uint64_t)[sampleText length];
                     style_record previousRecord = {0, 0, 0, 0, 0, dcolor};
 
                     while (styleCount) {
@@ -319,7 +317,7 @@ static void insertTagsFromStyleRecord(style_record record, NSMutableString *samp
                     }
 
                     // Add a final record to close all the remainings open tags
-                    if (previousRecord.endChar < endChar + 1) {
+                    if ((uint64_t)previousRecord.endChar < endChar + 1ULL) {
                         style_record gapRecord = {previousRecord.endChar, endChar, 0, 0, 0, dcolor};
                         insertTagsFromStyleRecord(gapRecord, sampleText, &styles, previousRecord.color, &numberOfInsertedChars);
                     }
@@ -350,16 +348,19 @@ static void insertTagsFromStyleRecord(style_record record, NSMutableString *samp
         }
 
         if (textSampleLength) {
-            if ([sampleText characterAtIndex:[sampleText length] - 1] == '\n') {
-                [sampleText deleteCharactersInRange:NSMakeRange([sampleText length] - 1, 1)];
+            if (sampleText && [sampleText length] > 0) {
+                unichar lastChar = [sampleText characterAtIndex:[sampleText length] - 1];
+                if (lastChar == '\n') {
+                    [sampleText deleteCharactersInRange:NSMakeRange([sampleText length] - 1, 1)];
+                }
             }
 
             if (sampleText) {
                 MP4Timestamp time = cursor.presentationTimeStamp;
 
                 [srtFile appendFormat:@"%lu\n%@ --> %@", (unsigned long)srtSampleNumber++,
-                                                         SRTStringFromTime(time, timeScale, ','),
-                                                         SRTStringFromTime(time + cursor.currentSampleDuration, timeScale, ',')];
+                                      SRTStringFromTime(time, timeScale, ','),
+                                      SRTStringFromTime(time + cursor.currentSampleDuration, timeScale, ',')];
                 if (tbox) {
                     [srtFile appendString:@" X1:0"];
                 }
@@ -385,10 +386,17 @@ fail:
 
 - (void)setForcedTrack:(MP42Track *)newForcedTrack
 {
+    NSUndoManager *undoManager = self.undo;
+    MP42Track *forcedTrackStrongRef = _forcedTrack;
+    if (forcedTrackStrongRef != newForcedTrack) {
+        [[undoManager prepareWithInvocationTarget:self] setForcedTrack:forcedTrackStrongRef];
+    }
     _forcedTrack = newForcedTrack;
     _forcedTrackId = 0;
-    self.edited = YES;
-    self.updatedProperty[@"forced"] = @YES;
+    if (!(undoManager.isUndoing || undoManager.isRedoing)) {
+        self.edited = YES;
+        self.updatedProperty[@"forced"] = @YES;
+    }
 }
 
 #pragma mark - NSCopying
@@ -444,3 +452,4 @@ fail:
 }
 
 @end
+

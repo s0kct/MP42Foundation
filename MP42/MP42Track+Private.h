@@ -2,7 +2,7 @@
 //  MP42Track+Private.h
 //  MP42Foundation
 //
-//  Created by Damiano Galassi on 19/09/15.
+//  Created by Damiano Galassi on 19/09/15
 //  Copyright © 2022 Damiano Galassi. All rights reserved.
 //
 
