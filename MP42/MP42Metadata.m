@@ -276,6 +276,12 @@
         MP42MetadataKeyDisneyPlusEpisodeID,
         MP42MetadataKeyDisneyPlusContentURL,
         
+        // FOD Extended Metadata
+        MP42MetadataKeyFODMovieID,
+        MP42MetadataKeyFODShowID,
+        MP42MetadataKeyFODEpisodeID,
+        MP42MetadataKeyFODContentURL,
+
         // Vidio Extended Metadata
         MP42MetadataKeyVidioGenre,
         MP42MetadataKeyVidioRating,
@@ -492,6 +498,12 @@
         MP42MetadataKeyCatchplayEpisodeID,
         MP42MetadataKeyCatchplayContentURL,
         MP42MetadataKeyCatchplayContentAdvisories,
+
+        // FOD Extended Metadata
+        MP42MetadataKeyFODMovieID,
+        MP42MetadataKeyFODShowID,
+        MP42MetadataKeyFODEpisodeID,
+        MP42MetadataKeyFODContentURL,
 
         // Vidio Extended Metadata
         MP42MetadataKeyVidioGenre,
@@ -1291,6 +1303,12 @@
                                   name:"AppleMusicISRC"];
     
     // ============================================================
+    // FOD Extended Metadata READ
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyFODMovieID name:"FODFodMovieID"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyFODShowID name:"FODFodShowID"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyFODEpisodeID name:"FODFodEpisodeID"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyFODContentURL name:"FODFodContentURL"];
+
     // Vidio Extended Metadata READ
     // ============================================================
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyVidioGenre name:"VidioGenre"];
@@ -2200,6 +2218,12 @@
                                    name:"AppleMusicISRC"];
     
     // ============================================================
+    // FOD Extended Metadata WRITE
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyFODMovieID name:"FODFodMovieID"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyFODShowID name:"FODFodShowID"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyFODEpisodeID name:"FODFodEpisodeID"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyFODContentURL name:"FODFodContentURL"];
+
     // Vidio Extended Metadata WRITE
     // ============================================================
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyVidioGenre name:"VidioGenre"];

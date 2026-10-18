@@ -171,6 +171,12 @@ extern NSString *const MP42MetadataKeyVidioMovieID;            // String
 extern NSString *const MP42MetadataKeyVidioShowID;             // String
 extern NSString *const MP42MetadataKeyVidioEpisodeID;          // String
 
+// FOD Extended Metadata keys
+extern NSString *const MP42MetadataKeyFODMovieID;
+extern NSString *const MP42MetadataKeyFODShowID;
+extern NSString *const MP42MetadataKeyFODEpisodeID;
+extern NSString *const MP42MetadataKeyFODContentURL;
+
 // FANZA Extended Metadata keys
 extern NSString *const MP42MetadataKeyFANZAContentID;          // String
 extern NSString *const MP42MetadataKeyFANZAProductID;          // String
