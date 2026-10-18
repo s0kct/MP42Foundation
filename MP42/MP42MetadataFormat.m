@@ -477,6 +477,11 @@ NSString *localizedMetadataKeyName(NSString *key)
                     nil
                 ),
             
+            MP42MetadataKeyFODMovieID: NSLocalizedStringFromTableInBundle(@"FOD Movie ID", @"Localizable", bundle, nil),
+            MP42MetadataKeyFODShowID: NSLocalizedStringFromTableInBundle(@"FOD Show ID", @"Localizable", bundle, nil),
+            MP42MetadataKeyFODEpisodeID: NSLocalizedStringFromTableInBundle(@"FOD Episode ID", @"Localizable", bundle, nil),
+            MP42MetadataKeyFODContentURL: NSLocalizedStringFromTableInBundle(@"FOD Content URL", @"Localizable", bundle, nil),
+
             // MARK: Vidio Extended Metadata
 
             MP42MetadataKeyVidioGenre:
@@ -952,6 +957,12 @@ NSString *const MP42MetadataKeyVidioShowID =
 
 NSString *const MP42MetadataKeyVidioEpisodeID =
     @"Vidio Episode ID";
+
+// MARK: - FOD Extended Metadata
+NSString *const MP42MetadataKeyFODMovieID = @"FOD Movie ID";
+NSString *const MP42MetadataKeyFODShowID = @"FOD Show ID";
+NSString *const MP42MetadataKeyFODEpisodeID = @"FOD Episode ID";
+NSString *const MP42MetadataKeyFODContentURL = @"FOD Content URL";
 
 // MARK: - Apple Music Extended Metadata
 
