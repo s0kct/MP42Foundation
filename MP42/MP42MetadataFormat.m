@@ -300,9 +300,12 @@ NSString *localizedMetadataKeyName(NSString *key)
                 NSLocalizedStringFromTableInBundle(@"MGS Product ID", @"Localizable", bundle, nil),
             MP42MetadataKeyMGSContentURL:
                 NSLocalizedStringFromTableInBundle(@"MGS Content URL", @"Localizable", bundle, nil),
-            MP42MetadataKeyAdultWikiContentID: @"Adult-Wiki Content ID",
-            MP42MetadataKeyAdultWikiProductID: @"Adult-Wiki Product ID",
-            MP42MetadataKeyAdultWikiContentURL: @"Adult-Wiki Content URL",
+            MP42MetadataKeyAdultWikiContentID:
+                NSLocalizedStringFromTableInBundle(@"Adult-Wiki Content ID", @"Localizable", bundle, nil),
+            MP42MetadataKeyAdultWikiProductID:
+                NSLocalizedStringFromTableInBundle(@"Adult-Wiki Product ID", @"Localizable", bundle, nil),
+            MP42MetadataKeyAdultWikiContentURL:
+                NSLocalizedStringFromTableInBundle(@"Adult-Wiki Content URL", @"Localizable", bundle, nil),
 
             // MARK: DMM Extended Metadata
 
@@ -626,7 +629,22 @@ NSString *localizedMetadataKeyName(NSString *key)
                 NSLocalizedStringFromTableInBundle(@"Apple TV Roles", @"Localizable", bundle, nil),
 
             MP42MetadataKeyCreator:
-                NSLocalizedStringFromTableInBundle(@"Creator", @"Localizable", bundle, nil)
+                NSLocalizedStringFromTableInBundle(@"Creator", @"Localizable", bundle, nil),
+
+            MP42MetadataKeyiTunesU:
+                NSLocalizedStringFromTableInBundle(@"iTunes U", @"Localizable", bundle, nil),
+
+            MP42MetadataKeyUnofficialSubtitle:
+                NSLocalizedStringFromTableInBundle(@"Unofficial Subtitle", @"Localizable", bundle, nil),
+
+            MP42MetadataKeyUnofficialLanguage:
+                NSLocalizedStringFromTableInBundle(@"Unofficial Language", @"Localizable", bundle, nil),
+
+            MP42MetadataKeyUnofficialASIN:
+                NSLocalizedStringFromTableInBundle(@"Unofficial ASIN", @"Localizable", bundle, nil),
+
+            MP42MetadataKeyUnofficialAbridged:
+                NSLocalizedStringFromTableInBundle(@"Unofficial Abridged", @"Localizable", bundle, nil)
         };
     });
 

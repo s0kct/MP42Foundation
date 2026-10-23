@@ -342,6 +342,8 @@
 		A9A0C99B19814B0800A72763 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		A9A0C9A319814C9B00A72763 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		A9AA2B831DBF954000C9D897 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DEDE1F2FB892B507EB14AB60 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DEDE931F51FDF28D03801262 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9AAD4FE275F935D00E586F6 /* MP42DolbyVisionMetadata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MP42DolbyVisionMetadata.h; sourceTree = "<group>"; };
 		A9AEFE141B9B111B00771292 /* MP42FileImporter+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MP42FileImporter+Private.h"; sourceTree = "<group>"; };
 		A9B0F28822A29E9C0012E099 /* liblzma.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = liblzma.tbd; path = usr/lib/liblzma.tbd; sourceTree = SDKROOT; };
@@ -431,6 +433,8 @@
 		A9B9C4921823986200416A4E /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		A9BA1ACC1DBF76FD00FD0B38 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9BA1AEA1DBF7DBE00FD0B38 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DEDEDAC352583B074CA57AFD /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DEDEB2DE10CEEB8D959ECFC6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A9D599BA1D4885E0001C22BD /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = contrib/ffmpeg/lib/libswresample.a; sourceTree = "<group>"; };
 		A9D6CD611F9E3A7F00CCEE3E /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
 		A9D6CD651F9E3A8500CCEE3E /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
@@ -940,6 +944,7 @@
 				fr,
 				"es-419",
 				id,
+				de,
 			);
 			mainGroup = A9B9C1E3182391DF00416A4E;
 			productRefGroup = A9B9C1EE182391DF00416A4E /* Products */;
@@ -1117,6 +1122,8 @@
 				A9E059D42529DF97000E0E9A /* zh-Hans */,
 				A9146866278D8F0C00860468 /* fr */,
 				50682E732B86B6CC008DB28B /* es-419 */,
+				DEDE1F2FB892B507EB14AB60 /* id */,
+				DEDE931F51FDF28D03801262 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1140,6 +1147,8 @@
 				A9E059D52529DF97000E0E9A /* zh-Hans */,
 				A9146867278D8F0C00860468 /* fr */,
 				50682E742B86B6E3008DB28B /* es-419 */,
+				DEDEDAC352583B074CA57AFD /* id */,
+				DEDEB2DE10CEEB8D959ECFC6 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

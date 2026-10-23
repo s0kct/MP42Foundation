@@ -1,0 +1,971 @@
+/* No comment provided by engineer. */
+"AAC" = "AAC";
+
+/* No comment provided by engineer. */
+"AC3" = "AC3";
+
+/* No comment provided by engineer. */
+"Acknowledgement" = "Danksagung";
+
+/* No comment provided by engineer. */
+"Album" = "Album";
+
+/* No comment provided by engineer. */
+"Album Artist" = "Albuminterpret";
+
+/* No comment provided by engineer. */
+"Animation" = "Animation";
+
+/* No comment provided by engineer. */
+"Apple Lossless" = "Apple Lossless";
+
+/* No comment provided by engineer. */
+"Arranger" = "Arrangeur";
+
+/* No comment provided by engineer. */
+"Art Director" = "Art Director";
+
+/* No comment provided by engineer. */
+"Artist" = "Interpret";
+
+/* No comment provided by engineer. */
+"artist ID" = "Interpreten-ID";
+
+/* No comment provided by engineer. */
+"Atmos" = "Atmos";
+
+/* No comment provided by engineer. */
+"ATSC" = "ATSC";
+
+/* No comment provided by engineer. */
+"AV1" = "AV1";
+
+/* No comment provided by engineer. */
+"Cast" = "Besetzung";
+
+/* No comment provided by engineer. */
+"Category" = "Kategorie";
+
+/* No comment provided by engineer. */
+"CEA-608" = "CEA-608";
+
+/* No comment provided by engineer. */
+"CEA-708" = "CEA-708";
+
+/* Default Chapter Track name */
+"Chapter Track" = "Kapitelspur";
+
+/* No comment provided by engineer. */
+"Cinepak" = "Cinepak";
+
+/* No comment provided by engineer. */
+"Closed Caption Track" = "Closed-Caption-Spur";
+
+/* No comment provided by engineer. */
+"Codirector" = "Co-Regisseur";
+
+/* No comment provided by engineer. */
+"Comments" = "Kommentare";
+
+/* No comment provided by engineer. */
+"Compilation" = "Compilation";
+
+/* No comment provided by engineer. */
+"Composer" = "Komponist";
+
+/* No comment provided by engineer. */
+"composer ID" = "Komponisten-ID";
+
+/* No comment provided by engineer. */
+"Conductor" = "Dirigent";
+
+/* No comment provided by engineer. */
+"content ID" = "Inhalts-ID";
+
+/* No comment provided by engineer. */
+"Content Rating" = "Inhaltsbewertung";
+
+/* No comment provided by engineer. */
+"Copyright" = "Copyright";
+
+/* No comment provided by engineer. */
+"Counter 32" = "Counter 32";
+
+/* No comment provided by engineer. */
+"Counter 64" = "Counter 64";
+
+/* No comment provided by engineer. */
+"Credits" = "Mitwirkende";
+
+/* No comment provided by engineer. */
+"Description" = "Beschreibung";
+
+/* No comment provided by engineer. */
+"Director" = "Regisseur";
+
+/* No comment provided by engineer. */
+"Disk #" = "Disc-Nr.";
+
+/* No comment provided by engineer. */
+"DTS" = "DTS";
+
+/* No comment provided by engineer. */
+"DV NTSC" = "DV NTSC";
+
+/* No comment provided by engineer. */
+"DV PAL" = "DV PAL";
+
+/* No comment provided by engineer. */
+"DVC Pro PAL" = "DVC Pro PAL";
+
+/* No comment provided by engineer. */
+"E-AC3" = "E-AC3";
+
+/* No comment provided by engineer. */
+"Encoded By" = "Codiert von";
+
+/* No comment provided by engineer. */
+"Encoding Tool" = "Codierungswerkzeug";
+
+/* No comment provided by engineer. */
+"Executive Producer" = "Ausführender Produzent";
+
+/* No comment provided by engineer. */
+"FairPlay AAC" = "FairPlay AAC";
+
+/* No comment provided by engineer. */
+"FairPlay AC3" = "FairPlay AC3";
+
+/* No comment provided by engineer. */
+"FairPlay CEA-608" = "FairPlay CEA-608";
+
+/* No comment provided by engineer. */
+"FairPlay Sound" = "FairPlay Sound";
+
+/* No comment provided by engineer. */
+"FairPlay Tx3g" = "FairPlay Tx3g";
+
+/* No comment provided by engineer. */
+"FairPlay Video" = "FairPlay Video";
+
+/* No comment provided by engineer. */
+"FLAC" = "FLAC";
+
+/* No comment provided by engineer. */
+"Gapless" = "Lückenlos";
+
+/* No comment provided by engineer. */
+"Genre" = "Genre";
+
+/* No comment provided by engineer. */
+"genre ID" = "Genre-ID";
+
+/* No comment provided by engineer. */
+"Grouping" = "Gruppierung";
+
+/* No comment provided by engineer. */
+"H.263" = "H.263";
+
+/* No comment provided by engineer. */
+"H.264" = "H.264";
+
+/* No comment provided by engineer. */
+"H.264 (Parameter Sets in Bitstream)" = "H.264 (Parameter Sets in Bitstream)";
+
+/* No comment provided by engineer. */
+"HD Video" = "HD-Video";
+
+/* No comment provided by engineer. */
+"HE-AAC" = "HE-AAC";
+
+/* No comment provided by engineer. */
+"HEVC" = "HEVC";
+
+/* No comment provided by engineer. */
+"HEVC (Parameter Sets in Bitstream)" = "HEVC (Parameter Sets in Bitstream)";
+
+/* No comment provided by engineer. */
+"Hint" = "Hinweis";
+
+/* No comment provided by engineer. */
+"Hint Track" = "Hinweis-Spur";
+
+/* No comment provided by engineer. */
+"iTunes Account" = "iTunes-Konto";
+
+/* No comment provided by engineer. */
+"iTunes Account Type" = "iTunes-Kontotyp";
+
+/* No comment provided by engineer. */
+"iTunes Country" = "iTunes-Land";
+
+/* No comment provided by engineer. */
+"JPEG" = "JPEG";
+
+/* No comment provided by engineer. */
+"JPEG OpenDML" = "JPEG OpenDML";
+
+/* No comment provided by engineer. */
+"Keywords" = "Stichwörter";
+
+/* No comment provided by engineer. */
+"Linear Notes" = "Begleittext";
+
+/* No comment provided by engineer. */
+"Long Description" = "Lange Beschreibung";
+
+/* No comment provided by engineer. */
+"Lyricist" = "Texter";
+
+/* No comment provided by engineer. */
+"Lyrics" = "Songtext";
+
+/* No comment provided by engineer. */
+"Media Kind" = "Medienart";
+
+/* No comment provided by engineer. */
+"Metadata Track" = "Metadaten-Spur";
+
+/* No comment provided by engineer. */
+"Movement Count" = "Anzahl der Sätze";
+
+/* No comment provided by engineer. */
+"Movement Name" = "Satzname";
+
+/* No comment provided by engineer. */
+"Movement Number" = "Satznummer";
+
+/* No comment provided by engineer. */
+"MP1" = "MP1";
+
+/* No comment provided by engineer. */
+"MP2" = "MP2";
+
+/* No comment provided by engineer. */
+"MP3" = "MP3";
+
+/* No comment provided by engineer. */
+"MPEG-1 Video" = "MPEG-1 Video";
+
+/* No comment provided by engineer. */
+"MPEG-2 Video" = "MPEG-2 Video";
+
+/* No comment provided by engineer. */
+"MPEG-4 Control" = "MPEG-4 Control";
+
+/* No comment provided by engineer. */
+"MPEG-4 Control Track" = "MPEG-4-Control-Spur";
+
+/* No comment provided by engineer. */
+"MPEG-4 ODSM" = "MPEG-4 ODSM";
+
+/* No comment provided by engineer. */
+"MPEG-4 ODSM Track" = "MPEG-4-ODSM-Spur";
+
+/* No comment provided by engineer. */
+"MPEG-4 SDSM" = "MPEG-4 SDSM";
+
+/* No comment provided by engineer. */
+"MPEG-4 SDSM Track" = "MPEG-4-SDSM-Spur";
+
+/* No comment provided by engineer. */
+"MPEG-4 Visual" = "MPEG-4 Visual";
+
+/* No comment provided by engineer. */
+"Muxed Track" = "Muxed-Spur";
+
+/* No comment provided by engineer. */
+"Name" = "Name";
+
+/* No comment provided by engineer. */
+"Online Extras" = "Online-Extras";
+
+/* No comment provided by engineer. */
+"Opus" = "Opus";
+
+/* No comment provided by engineer. */
+"Original Artist" = "Originalkünstler";
+
+/* No comment provided by engineer. */
+"PCM" = "PCM";
+
+/* No comment provided by engineer. */
+"Performer" = "Darsteller";
+
+/* No comment provided by engineer. */
+"PGS" = "PGS";
+
+/* No comment provided by engineer. */
+"Phonogram Rights" = "Tonträgerrechte";
+
+/* No comment provided by engineer. */
+"playlist ID" = "Playlist-ID";
+
+/* No comment provided by engineer. */
+"PNG" = "PNG";
+
+/* No comment provided by engineer. */
+"Podcast" = "Podcast";
+
+/* No comment provided by engineer. */
+"Producers" = "Produzenten";
+
+/* No comment provided by engineer. */
+"ProRes 422" = "ProRes 422";
+
+/* No comment provided by engineer. */
+"ProRes 422 HQ" = "ProRes 422 HQ";
+
+/* No comment provided by engineer. */
+"ProRes 422 LT" = "ProRes 422 LT";
+
+/* No comment provided by engineer. */
+"ProRes 422 Proxy" = "ProRes 422 Proxy";
+
+/* No comment provided by engineer. */
+"ProRes 4444" = "ProRes 4444";
+
+/* No comment provided by engineer. */
+"Publisher" = "Herausgeber";
+
+/* No comment provided by engineer. */
+"Purchase Date" = "Kaufdatum";
+
+/* No comment provided by engineer. */
+"Rating" = "Bewertung";
+
+/* No comment provided by engineer. */
+"Rating Annotation" = "Bewertungsanmerkung";
+
+/* No comment provided by engineer. */
+"Record Company" = "Plattenfirma";
+
+/* No comment provided by engineer. */
+"Release Date" = "Erscheinungsdatum";
+
+/* No comment provided by engineer. */
+"Screenwriters" = "Drehbuchautoren";
+
+/* No comment provided by engineer. */
+"Series Description" = "Seriebeschreibung";
+
+/* No comment provided by engineer. */
+"Show Work And Movement" = "Werk und Satz anzeigen";
+
+/* No comment provided by engineer. */
+"Soloist" = "Solist";
+
+/* No comment provided by engineer. */
+"Song Description" = "Songbeschreibung";
+
+/* No comment provided by engineer. */
+"Song Producer" = "Song-Produzent";
+
+/* No comment provided by engineer. */
+"Sorenson Video" = "Sorenson Video";
+
+/* No comment provided by engineer. */
+"Sorenson Video 3" = "Sorenson Video 3";
+
+/* No comment provided by engineer. */
+"Sort Album" = "Album sortieren";
+
+/* No comment provided by engineer. */
+"Sort Album Artist" = "Albuminterpret sortieren";
+
+/* No comment provided by engineer. */
+"Sort Artist" = "Interpret sortieren";
+
+/* No comment provided by engineer. */
+"Sort Composer" = "Komponist sortieren";
+
+/* No comment provided by engineer. */
+"Sort Name" = "Name sortieren";
+
+/* No comment provided by engineer. */
+"Sort TV Show" = "Serie sortieren";
+
+/* No comment provided by engineer. */
+"Sound Engineer" = "Toningenieur";
+
+/* No comment provided by engineer. */
+"Sound Track" = "Tonspur";
+
+/* No comment provided by engineer. */
+"SSA" = "SSA";
+
+/* No comment provided by engineer. */
+"Studio" = "Studio";
+
+/* No comment provided by engineer. */
+"Subtitle Track" = "Untertitelspur";
+
+/* No comment provided by engineer. */
+"Tempo" = "Tempo";
+
+/* No comment provided by engineer. */
+"Text" = "Text";
+
+/* No comment provided by engineer. */
+"Text Track" = "Textspur";
+
+/* No comment provided by engineer. */
+"Thanks" = "Danksagung";
+
+/* No comment provided by engineer. */
+"Theora" = "Theora";
+
+/* No comment provided by engineer. */
+"TimeCode" = "TimeCode";
+
+/* No comment provided by engineer. */
+"TimeCode 64" = "TimeCode 64";
+
+/* No comment provided by engineer. */
+"TimeCode Track" = "TimeCode-Spur";
+
+/* No comment provided by engineer. */
+"Timed Metadata" = "Zeitgesteuerte Metadaten";
+
+/* No comment provided by engineer. */
+"Track #" = "Titelnr.";
+
+/* No comment provided by engineer. */
+"Track Sub-Title" = "Untertitel des Titels";
+
+/* No comment provided by engineer. */
+"True Audio" = "True Audio";
+
+/* No comment provided by engineer. */
+"True HD" = "True HD";
+
+/* No comment provided by engineer. */
+"TV Episode #" = "Serienfolge-Nr.";
+
+/* No comment provided by engineer. */
+"TV Episode ID" = "Serienfolgen-ID";
+
+/* No comment provided by engineer. */
+"TV Network" = "Fernsehsender";
+
+/* No comment provided by engineer. */
+"TV Season" = "Serienstaffel";
+
+/* No comment provided by engineer. */
+"TV Show" = "Serie";
+
+/* No comment provided by engineer. */
+"Tx3g" = "Tx3g";
+
+/* No comment provided by engineer. */
+"Video Track" = "Videospur";
+
+/* No comment provided by engineer. */
+"VobSub" = "VobSub";
+
+/* No comment provided by engineer. */
+"Vorbis" = "Vorbis";
+
+/* No comment provided by engineer. */
+"VP8" = "VP8";
+
+/* No comment provided by engineer. */
+"VP9" = "VP9";
+
+/* No comment provided by engineer. */
+"WebVTT" = "WebVTT";
+
+/* No comment provided by engineer. */
+"Work Name" = "Werkname";
+
+/* No comment provided by engineer. */
+"XAVC Long GOP" = "XAVC Long GOP";
+
+/* No comment provided by engineer. */
+"XID" = "XID";
+
+/* Metadata key */
+"1Pondo Content ID" = "Inhalts-ID 1Pondo";
+
+/* Metadata key */
+"1Pondo Content URL" = "Inhalts-URL 1Pondo";
+
+/* Metadata key */
+"Album ID" = "Album-ID";
+
+/* Metadata key */
+"Apple Genre ID" = "Apple-Genre-ID";
+
+/* Metadata key */
+"Apple Music Album ID" = "Album-ID Apple Music";
+
+/* Metadata key */
+"Apple Music Artist ID" = "Interpreten-ID Apple Music";
+
+/* Metadata key */
+"Apple Music Content ID" = "Inhalts-ID Apple Music";
+
+/* Metadata key */
+"Apple Music URL" = "URL Apple Music";
+
+/* Metadata key */
+"Apple TV Content ID" = "Inhalts-ID Apple TV";
+
+/* Metadata key */
+"Apple TV Content URL" = "Inhalts-URL Apple TV";
+
+/* Metadata key */
+"Apple TV Entitled to Play" = "Wiedergabeberechtigt Apple TV";
+
+/* Metadata key */
+"Apple TV Episode ID" = "Folgen-ID Apple TV";
+
+/* Metadata key */
+"Apple TV Episode Index" = "Folgenindex Apple TV";
+
+/* Metadata key */
+"Apple TV Fractional Episode Number" = "Gebrochene Folgennummer Apple TV";
+
+/* Metadata key */
+"Apple TV Is First Episode" = "Ist erste Folge Apple TV";
+
+/* Metadata key */
+"Apple TV Rating Name" = "Bewertungsname Apple TV";
+
+/* Metadata key */
+"Apple TV Rating System" = "Bewertungssystem Apple TV";
+
+/* Metadata key */
+"Apple TV Rating System Type" = "Typ des Bewertungssystems Apple TV";
+
+/* Metadata key */
+"Apple TV Rating Value" = "Bewertungswert Apple TV";
+
+/* Metadata key */
+"Apple TV Roles" = "Rollen Apple TV";
+
+/* Metadata key */
+"Apple TV Season Adam ID" = "Adam-ID der Staffel Apple TV";
+
+/* Metadata key */
+"Apple TV Season Canonical ID" = "Kanonische Staffel-ID Apple TV";
+
+/* Metadata key */
+"Apple TV Season ID" = "Staffel-ID Apple TV";
+
+/* Metadata key */
+"Apple TV Season URL" = "Staffel-URL Apple TV";
+
+/* Metadata key */
+"Apple TV Show ID" = "Serien-ID Apple TV";
+
+/* Metadata key */
+"Apple TV Show URL" = "Serien-URL Apple TV";
+
+/* Metadata key */
+"Apple TV Version" = "Version Apple TV";
+
+/* Metadata key */
+"Artist ID" = "Interpreten-ID";
+
+/* Metadata key */
+"BPM" = "BPM";
+
+/* Metadata key */
+"CATCHPLAY+ Content Advisories" = "Inhaltshinweise CATCHPLAY+";
+
+/* Metadata key */
+"CATCHPLAY+ Content URL" = "Inhalts-URL CATCHPLAY+";
+
+/* Metadata key */
+"CATCHPLAY+ Episode ID" = "Folgen-ID CATCHPLAY+";
+
+/* Metadata key */
+"CATCHPLAY+ Movie ID" = "Film-ID CATCHPLAY+";
+
+/* Metadata key */
+"CATCHPLAY+ TV Show ID" = "Serien-ID CATCHPLAY+";
+
+/* Metadata key */
+"Caribbean Content ID" = "Inhalts-ID Caribbean";
+
+/* Metadata key */
+"Caribbean Content URL" = "Inhalts-URL Caribbean";
+
+/* Metadata key */
+"Collection ID" = "Sammlungs-ID";
+
+/* Metadata key */
+"Common Sense Content Info" = "Common-Sense-Inhaltsinfo";
+
+/* Metadata key */
+"Common Sense Summary" = "Common-Sense-Zusammenfassung";
+
+/* Metadata key */
+"Content Advisories" = "Inhaltshinweise";
+
+/* Metadata key */
+"Content ID" = "Inhalts-ID";
+
+/* Metadata key */
+"Content URL" = "Inhalts-URL";
+
+/* Metadata key */
+"Country of Origin" = "Herkunftsland";
+
+/* Metadata key */
+"Creator" = "Urheber";
+
+/* Metadata key */
+"Creators" = "Urheber";
+
+/* Metadata key */
+"DMM Content ID" = "Inhalts-ID DMM";
+
+/* Metadata key */
+"DMM Content URL" = "Inhalts-URL DMM";
+
+/* Metadata key */
+"DMM Product ID" = "Produkt-ID DMM";
+
+/* Metadata key */
+"Disk Count" = "Disc-Anzahl";
+
+/* Metadata key */
+"Disney+ Content URL" = "Inhalts-URL Disney+";
+
+/* Metadata key */
+"Disney+ Episode ID" = "Folgen-ID Disney+";
+
+/* Metadata key */
+"Disney+ Movie ID" = "Film-ID Disney+";
+
+/* Metadata key */
+"Disney+ Show ID" = "Serien-ID Disney+";
+
+/* Metadata key */
+"Duration" = "Dauer";
+
+/* Metadata key */
+"Entitled to Play" = "Wiedergabeberechtigt";
+
+/* Metadata key */
+"Episode #" = "Folge #";
+
+/* Metadata key */
+"Episode ID" = "Folgen-ID";
+
+/* Metadata key */
+"Episode Index" = "Folgenindex";
+
+/* Metadata key */
+"Explicit Content" = "Explizite Inhalte";
+
+/* Metadata key */
+"FANZA Content ID" = "Inhalts-ID FANZA";
+
+/* Metadata key */
+"FANZA Content URL" = "Inhalts-URL FANZA";
+
+/* Metadata key */
+"FANZA Product ID" = "Produkt-ID FANZA";
+
+/* Metadata key */
+"FOD Content URL" = "Inhalts-URL FOD";
+
+/* Metadata key */
+"FOD Episode ID" = "Folgen-ID FOD";
+
+/* Metadata key */
+"FOD Movie ID" = "Film-ID FOD";
+
+/* Metadata key */
+"FOD Show ID" = "Serien-ID FOD";
+
+/* Metadata key */
+"Fractional Episode Number" = "Gebrochene Folgennummer";
+
+/* Metadata key */
+"ISRC" = "ISRC";
+
+/* Metadata key */
+"Is First Episode" = "Ist erste Folge";
+
+/* Metadata key */
+"Japan DVD Content ID" = "Inhalts-ID Japan DVD";
+
+/* Metadata key */
+"Japan DVD Content URL" = "Inhalts-URL Japan DVD";
+
+/* Metadata key */
+"Japan DVD Product ID" = "Produkt-ID Japan DVD";
+
+/* Metadata key */
+"Liner Notes" = "Begleittext";
+
+/* Metadata key */
+"MGS Content ID" = "Inhalts-ID MGS";
+
+/* Metadata key */
+"MGS Content URL" = "Inhalts-URL MGS";
+
+/* Metadata key */
+"MGS Product ID" = "Produkt-ID MGS";
+
+/* Metadata key */
+"MissAV Content ID" = "Inhalts-ID MissAV";
+
+/* Metadata key */
+"MissAV Content URL" = "Inhalts-URL MissAV";
+
+/* Metadata key */
+"MissAV Product ID" = "Produkt-ID MissAV";
+
+/* Metadata key */
+"Movie ID" = "Film-ID";
+
+/* Metadata key */
+"Music ID" = "Musik-ID";
+
+/* Metadata key */
+"Netflix Content Advisories" = "Inhaltshinweise Netflix";
+
+/* Metadata key */
+"Netflix Content URL" = "Inhalts-URL Netflix";
+
+/* Metadata key */
+"Netflix Episode ID" = "Folgen-ID Netflix";
+
+/* Metadata key */
+"Netflix Genre" = "Genre Netflix";
+
+/* Metadata key */
+"Netflix Movie ID" = "Film-ID Netflix";
+
+/* Metadata key */
+"Netflix Rating" = "Bewertung Netflix";
+
+/* Metadata key */
+"Netflix Rating Description" = "Bewertungsbeschreibung Netflix";
+
+/* Metadata key */
+"Netflix Show ID" = "Serien-ID Netflix";
+
+/* Metadata key */
+"Network" = "Netzwerk";
+
+/* Metadata key */
+"Original Spoken Language" = "Originalsprache";
+
+/* Metadata key */
+"Paramount+ Content URL" = "Inhalts-URL Paramount+";
+
+/* Metadata key */
+"Paramount+ Episode ID" = "Folgen-ID Paramount+";
+
+/* Metadata key */
+"Paramount+ Movie ID" = "Film-ID Paramount+";
+
+/* Metadata key */
+"Performers" = "Darsteller";
+
+/* Metadata key */
+"Playlist ID" = "Playlist-ID";
+
+/* Metadata key */
+"Prime Video Content ID" = "Inhalts-ID Prime Video";
+
+/* Metadata key */
+"Prime Video Content URL" = "Inhalts-URL Prime Video";
+
+/* Metadata key */
+"Product ID" = "Produkt-ID";
+
+/* Metadata key */
+"Rating Description" = "Bewertungsbeschreibung";
+
+/* Metadata key */
+"Rating Name" = "Bewertungsname";
+
+/* Metadata key */
+"Rating System" = "Bewertungssystem";
+
+/* Metadata key */
+"Rating System Type" = "Typ des Bewertungssystems";
+
+/* Metadata key */
+"Rating Value" = "Bewertungswert";
+
+/* Metadata key */
+"Recommended Age" = "Empfohlenes Alter";
+
+/* Metadata key */
+"Season" = "Staffel";
+
+/* Metadata key */
+"Season Adam ID" = "Adam-ID der Staffel";
+
+/* Metadata key */
+"Season Canonical ID" = "Kanonische Staffel-ID";
+
+/* Metadata key */
+"Season ID" = "Staffel-ID";
+
+/* Metadata key */
+"Season URL" = "Staffel-URL";
+
+/* Metadata key */
+"Series ID" = "Serien-ID";
+
+/* Metadata key */
+"Series Name" = "Serienname";
+
+/* Metadata key */
+"Service" = "Dienst";
+
+/* Metadata key */
+"Show ID" = "Serien-ID";
+
+/* Metadata key */
+"Show URL" = "Serien-URL";
+
+/* Metadata key */
+"Spotify Album ID" = "Album-ID Spotify";
+
+/* Metadata key */
+"Spotify Artist ID" = "Interpreten-ID Spotify";
+
+/* Metadata key */
+"Spotify Track ID" = "Titel-ID Spotify";
+
+/* Metadata key */
+"Spotify URL" = "URL Spotify";
+
+/* Metadata key */
+"TMDb Content ID" = "Inhalts-ID TMDb";
+
+/* Metadata key */
+"Track Count" = "Anzahl der Titel";
+
+/* Metadata key */
+"Track ID" = "Titel-ID";
+
+/* Metadata key */
+"U-NEXT Content URL" = "Inhalts-URL U-NEXT";
+
+/* Metadata key */
+"U-NEXT Episode ID" = "Folgen-ID U-NEXT";
+
+/* Metadata key */
+"U-NEXT Movie ID" = "Film-ID U-NEXT";
+
+/* Metadata key */
+"U-NEXT Show ID" = "Serien-ID U-NEXT";
+
+/* Metadata key */
+"VMX Content ID" = "Inhalts-ID VMX";
+
+/* Metadata key */
+"VMX Content URL" = "Inhalts-URL VMX";
+
+/* Metadata key */
+"Video ID" = "Video-ID";
+
+/* Metadata key */
+"Vidio Content URL" = "Inhalts-URL Vidio";
+
+/* Metadata key */
+"Vidio Episode ID" = "Folgen-ID Vidio";
+
+/* Metadata key */
+"Vidio Genre" = "Genre Vidio";
+
+/* Metadata key */
+"Vidio Movie ID" = "Film-ID Vidio";
+
+/* Metadata key */
+"Vidio Rating" = "Bewertung Vidio";
+
+/* Metadata key */
+"Vidio Show ID" = "Serien-ID Vidio";
+
+/* Metadata key */
+"Wavve Content URL" = "Inhalts-URL Wavve";
+
+/* Metadata key */
+"Wavve Episode ID" = "Folgen-ID Wavve";
+
+/* Metadata key */
+"Wavve Movie ID" = "Film-ID Wavve";
+
+/* Metadata key */
+"Wavve Show ID" = "Serien-ID Wavve";
+
+/* Metadata key */
+"YouTube Music Album ID" = "Album-ID YouTube Music";
+
+/* Metadata key */
+"YouTube Music Artist ID" = "Interpreten-ID YouTube Music";
+
+/* Metadata key */
+"YouTube Music URL" = "URL YouTube Music";
+
+/* Metadata key */
+"YouTube Music Video ID" = "Video-ID YouTube Music";
+
+/* Metadata key */
+"artistID" = "artistID";
+
+/* Metadata key */
+"contentID" = "contentID";
+
+/* Metadata key */
+"iTunes URL" = "URL iTunes";
+
+/* Metadata key */
+"playlistID" = "Playlist-ID";
+
+/* Metadata key */
+"Adult-Wiki Content ID" = "Inhalts-ID Adult-Wiki";
+
+/* Metadata key */
+"Adult-Wiki Product ID" = "Produkt-ID Adult-Wiki";
+
+/* Metadata key */
+"Adult-Wiki Content URL" = "Inhalts-URL Adult-Wiki";
+
+/* Metadata key */
+"iTunes U" = "iTunes U";
+
+/* Metadata key */
+"Unofficial Subtitle" = "Inoffizieller Untertitel";
+
+/* Metadata key */
+"Unofficial Language" = "Inoffizielle Sprache";
+
+/* Metadata key */
+"Unofficial ASIN" = "Inoffizielle ASIN";
+
+/* Metadata key */
+"Unofficial Abridged" = "Inoffiziell gekürzt";
+
+/* Metadata key */
+"Apple TV Movie ID" = "Film-ID Apple TV";
+
+/* Metadata key */
+"Label" = "Label";
+
+/* Metadata key */
+"Provider" = "Anbieter";
+
+/* Metadata key */
+"Released" = "Veröffentlicht";
+
+/* Metadata key */
+"Service Additional Content ID" = "Zusätzliche Inhalts-ID Dienst";
+
+/* Metadata key */
+"Service Content ID" = "Inhalts-ID Dienst";
+
+/* Metadata key */
+"Service Episode ID" = "Episoden-ID Dienst";
