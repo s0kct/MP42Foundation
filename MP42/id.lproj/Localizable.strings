@@ -14,13 +14,13 @@
 "Album Artist" = "Artis Album";
 
 /* No comment provided by engineer. */
-"Animation" = "Animation";
+"Animation" = "Animasi";
 
 /* No comment provided by engineer. */
 "Apple Lossless" = "Apple Lossless";
 
 /* No comment provided by engineer. */
-"Arranger" = "Aransemen";
+"Arranger" = "Penata Musik";
 
 /* No comment provided by engineer. */
 "Art Director" = "Pengarah Artistik";
@@ -185,7 +185,7 @@
 "HEVC (Parameter Sets in Bitstream)" = "HEVC (Parameter Sets in Bitstream)";
 
 /* No comment provided by engineer. */
-"Hint" = "Hint";
+"Hint" = "Petunjuk";
 
 /* No comment provided by engineer. */
 "Hint Track" = "Trek Petunjuk";
@@ -218,22 +218,22 @@
 "Lyricist" = "Penulis Lirik";
 
 /* No comment provided by engineer. */
-"Lyrics" = "Lyrics";
+"Lyrics" = "Lirik";
 
 /* No comment provided by engineer. */
-"Media Kind" = "Media Kind";
+"Media Kind" = "Jenis Media";
 
 /* No comment provided by engineer. */
-"Metadata Track" = "Metadata Trek";
+"Metadata Track" = "Trek Metadata";
 
 /* No comment provided by engineer. */
-"Movement Count" = "Movement Count";
+"Movement Count" = "Jumlah Movement";
 
 /* No comment provided by engineer. */
-"Movement Name" = "Movement Nama";
+"Movement Name" = "Nama Movement";
 
 /* No comment provided by engineer. */
-"Movement Number" = "Movement Number";
+"Movement Number" = "Nomor Movement";
 
 /* No comment provided by engineer. */
 "MP1" = "MP1";
@@ -254,52 +254,52 @@
 "MPEG-4 Control" = "MPEG-4 Control";
 
 /* No comment provided by engineer. */
-"MPEG-4 Control Track" = "MPEG-4 Control Trek";
+"MPEG-4 Control Track" = "Trek MPEG-4 Control";
 
 /* No comment provided by engineer. */
 "MPEG-4 ODSM" = "MPEG-4 ODSM";
 
 /* No comment provided by engineer. */
-"MPEG-4 ODSM Track" = "MPEG-4 ODSM Trek";
+"MPEG-4 ODSM Track" = "Trek MPEG-4 ODSM";
 
 /* No comment provided by engineer. */
 "MPEG-4 SDSM" = "MPEG-4 SDSM";
 
 /* No comment provided by engineer. */
-"MPEG-4 SDSM Track" = "MPEG-4 SDSM Trek";
+"MPEG-4 SDSM Track" = "Trek MPEG-4 SDSM";
 
 /* No comment provided by engineer. */
 "MPEG-4 Visual" = "MPEG-4 Visual";
 
 /* No comment provided by engineer. */
-"Muxed Track" = "Muxed Trek";
+"Muxed Track" = "Trek Muxed";
 
 /* No comment provided by engineer. */
 "Name" = "Nama";
 
 /* No comment provided by engineer. */
-"Online Extras" = "Online Extras";
+"Online Extras" = "Ekstra Daring";
 
 /* No comment provided by engineer. */
 "Opus" = "Opus";
 
 /* No comment provided by engineer. */
-"Original Artist" = "Original Artist";
+"Original Artist" = "Artis Asli";
 
 /* No comment provided by engineer. */
 "PCM" = "PCM";
 
 /* No comment provided by engineer. */
-"Performer" = "Performer";
+"Performer" = "Pemain";
 
 /* No comment provided by engineer. */
 "PGS" = "PGS";
 
 /* No comment provided by engineer. */
-"Phonogram Rights" = "Phonogram Rights";
+"Phonogram Rights" = "Hak Fonogram";
 
 /* No comment provided by engineer. */
-"playlist ID" = "playlist ID";
+"playlist ID" = "ID Playlist";
 
 /* No comment provided by engineer. */
 "PNG" = "PNG";
@@ -326,7 +326,7 @@
 "ProRes 4444" = "ProRes 4444";
 
 /* No comment provided by engineer. */
-"Publisher" = "Publisher";
+"Publisher" = "Penerbit";
 
 /* No comment provided by engineer. */
 "Purchase Date" = "Tanggal Pembelian";
@@ -335,10 +335,10 @@
 "Rating" = "Rating";
 
 /* No comment provided by engineer. */
-"Rating Annotation" = "Rating Annotation";
+"Rating Annotation" = "Anotasi Rating";
 
 /* No comment provided by engineer. */
-"Record Company" = "Record Company";
+"Record Company" = "Label Rekaman";
 
 /* No comment provided by engineer. */
 "Release Date" = "Tanggal Rilis";
@@ -347,19 +347,19 @@
 "Screenwriters" = "Penulis Skenario";
 
 /* No comment provided by engineer. */
-"Series Description" = "Series Description";
+"Series Description" = "Deskripsi Serial";
 
 /* No comment provided by engineer. */
-"Show Work And Movement" = "Show Work And Movement";
+"Show Work And Movement" = "Tampilkan Karya dan Movement";
 
 /* No comment provided by engineer. */
-"Soloist" = "Soloist";
+"Soloist" = "Solois";
 
 /* No comment provided by engineer. */
-"Song Description" = "Song Description";
+"Song Description" = "Deskripsi Lagu";
 
 /* No comment provided by engineer. */
-"Song Producer" = "Song Producer";
+"Song Producer" = "Produser Lagu";
 
 /* No comment provided by engineer. */
 "Sorenson Video" = "Sorenson Video";
@@ -368,28 +368,28 @@
 "Sorenson Video 3" = "Sorenson Video 3";
 
 /* No comment provided by engineer. */
-"Sort Album" = "Album Urut";
+"Sort Album" = "Urutan Album";
 
 /* No comment provided by engineer. */
-"Sort Album Artist" = "Artis Album Urut";
+"Sort Album Artist" = "Urutan Artis Album";
 
 /* No comment provided by engineer. */
-"Sort Artist" = "Artis Urut";
+"Sort Artist" = "Urutan Artis";
 
 /* No comment provided by engineer. */
-"Sort Composer" = "Komposer Urut";
+"Sort Composer" = "Urutan Komposer";
 
 /* No comment provided by engineer. */
-"Sort Name" = "Nama Urut";
+"Sort Name" = "Urutan Nama";
 
 /* No comment provided by engineer. */
-"Sort TV Show" = "Acara TV Urut";
+"Sort TV Show" = "Urutan Serial TV";
 
 /* No comment provided by engineer. */
-"Sound Engineer" = "Sound Engineer";
+"Sound Engineer" = "Teknisi Suara";
 
 /* No comment provided by engineer. */
-"Sound Track" = "Sound Trek";
+"Sound Track" = "Trek Suara";
 
 /* No comment provided by engineer. */
 "SSA" = "SSA";
@@ -398,19 +398,19 @@
 "Studio" = "Studio";
 
 /* No comment provided by engineer. */
-"Subtitle Track" = "Subjudul Trek";
+"Subtitle Track" = "Trek Subtitel";
 
 /* No comment provided by engineer. */
 "Tempo" = "Tempo";
 
 /* No comment provided by engineer. */
-"Text" = "Text";
+"Text" = "Teks";
 
 /* No comment provided by engineer. */
-"Text Track" = "Text Trek";
+"Text Track" = "Trek Teks";
 
 /* No comment provided by engineer. */
-"Thanks" = "Thanks";
+"Thanks" = "Terima Kasih";
 
 /* No comment provided by engineer. */
 "Theora" = "Theora";
@@ -422,16 +422,16 @@
 "TimeCode 64" = "TimeCode 64";
 
 /* No comment provided by engineer. */
-"TimeCode Track" = "TimeCode Trek";
+"TimeCode Track" = "Trek TimeCode";
 
 /* No comment provided by engineer. */
-"Timed Metadata" = "Timed Metadata";
+"Timed Metadata" = "Metadata Berwaktu";
 
 /* No comment provided by engineer. */
 "Track #" = "Trek #";
 
 /* No comment provided by engineer. */
-"Track Sub-Title" = "Trek Sub-Judul";
+"Track Sub-Title" = "Subjudul Trek";
 
 /* No comment provided by engineer. */
 "True Audio" = "True Audio";
@@ -452,13 +452,13 @@
 "TV Season" = "Musim TV";
 
 /* No comment provided by engineer. */
-"TV Show" = "Acara TV";
+"TV Show" = "Serial TV";
 
 /* No comment provided by engineer. */
 "Tx3g" = "Tx3g";
 
 /* No comment provided by engineer. */
-"Video Track" = "Video Trek";
+"Video Track" = "Trek Video";
 
 /* No comment provided by engineer. */
 "VobSub" = "VobSub";
@@ -476,7 +476,7 @@
 "WebVTT" = "WebVTT";
 
 /* No comment provided by engineer. */
-"Work Name" = "Work Nama";
+"Work Name" = "Nama Karya";
 
 /* No comment provided by engineer. */
 "XAVC Long GOP" = "XAVC Long GOP";
@@ -484,3 +484,488 @@
 /* No comment provided by engineer. */
 "XID" = "XID";
 
+/* Metadata key */
+"1Pondo Content ID" = "ID Konten 1Pondo";
+
+/* Metadata key */
+"1Pondo Content URL" = "URL Konten 1Pondo";
+
+/* Metadata key */
+"Album ID" = "ID Album";
+
+/* Metadata key */
+"Apple Genre ID" = "ID Genre Apple";
+
+/* Metadata key */
+"Apple Music Album ID" = "ID Album Apple Music";
+
+/* Metadata key */
+"Apple Music Artist ID" = "ID Artis Apple Music";
+
+/* Metadata key */
+"Apple Music Content ID" = "ID Konten Apple Music";
+
+/* Metadata key */
+"Apple Music URL" = "URL Apple Music";
+
+/* Metadata key */
+"Apple TV Content ID" = "ID Konten Apple TV";
+
+/* Metadata key */
+"Apple TV Content URL" = "URL Konten Apple TV";
+
+/* Metadata key */
+"Apple TV Entitled to Play" = "Berhak Diputar Apple TV";
+
+/* Metadata key */
+"Apple TV Episode ID" = "ID Episode Apple TV";
+
+/* Metadata key */
+"Apple TV Episode Index" = "Indeks Episode Apple TV";
+
+/* Metadata key */
+"Apple TV Fractional Episode Number" = "Nomor Episode Pecahan Apple TV";
+
+/* Metadata key */
+"Apple TV Is First Episode" = "Episode Pertama Apple TV";
+
+/* Metadata key */
+"Apple TV Rating Name" = "Nama Rating Apple TV";
+
+/* Metadata key */
+"Apple TV Rating System" = "Sistem Rating Apple TV";
+
+/* Metadata key */
+"Apple TV Rating System Type" = "Jenis Sistem Rating Apple TV";
+
+/* Metadata key */
+"Apple TV Rating Value" = "Nilai Rating Apple TV";
+
+/* Metadata key */
+"Apple TV Roles" = "Peran Apple TV";
+
+/* Metadata key */
+"Apple TV Season Adam ID" = "ID Adam Musim Apple TV";
+
+/* Metadata key */
+"Apple TV Season Canonical ID" = "ID Kanonis Musim Apple TV";
+
+/* Metadata key */
+"Apple TV Season ID" = "ID Musim Apple TV";
+
+/* Metadata key */
+"Apple TV Season URL" = "URL Musim Apple TV";
+
+/* Metadata key */
+"Apple TV Show ID" = "ID Serial Apple TV";
+
+/* Metadata key */
+"Apple TV Show URL" = "URL Serial Apple TV";
+
+/* Metadata key */
+"Apple TV Version" = "Versi Apple TV";
+
+/* Metadata key */
+"Artist ID" = "ID Artis";
+
+/* Metadata key */
+"BPM" = "BPM";
+
+/* Metadata key */
+"CATCHPLAY+ Content Advisories" = "Peringatan Konten CATCHPLAY+";
+
+/* Metadata key */
+"CATCHPLAY+ Content URL" = "URL Konten CATCHPLAY+";
+
+/* Metadata key */
+"CATCHPLAY+ Episode ID" = "ID Episode CATCHPLAY+";
+
+/* Metadata key */
+"CATCHPLAY+ Movie ID" = "ID Film CATCHPLAY+";
+
+/* Metadata key */
+"CATCHPLAY+ TV Show ID" = "ID Serial CATCHPLAY+";
+
+/* Metadata key */
+"Caribbean Content ID" = "ID Konten Caribbean";
+
+/* Metadata key */
+"Caribbean Content URL" = "URL Konten Caribbean";
+
+/* Metadata key */
+"Collection ID" = "ID Koleksi";
+
+/* Metadata key */
+"Common Sense Content Info" = "Info Konten Common Sense";
+
+/* Metadata key */
+"Common Sense Summary" = "Ringkasan Common Sense";
+
+/* Metadata key */
+"Content Advisories" = "Peringatan Konten";
+
+/* Metadata key */
+"Content ID" = "ID Konten";
+
+/* Metadata key */
+"Content URL" = "URL Konten";
+
+/* Metadata key */
+"Country of Origin" = "Negara Asal";
+
+/* Metadata key */
+"Creator" = "Kreator";
+
+/* Metadata key */
+"Creators" = "Kreator";
+
+/* Metadata key */
+"DMM Content ID" = "ID Konten DMM";
+
+/* Metadata key */
+"DMM Content URL" = "URL Konten DMM";
+
+/* Metadata key */
+"DMM Product ID" = "ID Produk DMM";
+
+/* Metadata key */
+"Disk Count" = "Jumlah Disk";
+
+/* Metadata key */
+"Disney+ Content URL" = "URL Konten Disney+";
+
+/* Metadata key */
+"Disney+ Episode ID" = "ID Episode Disney+";
+
+/* Metadata key */
+"Disney+ Movie ID" = "ID Film Disney+";
+
+/* Metadata key */
+"Disney+ Show ID" = "ID Serial Disney+";
+
+/* Metadata key */
+"Duration" = "Durasi";
+
+/* Metadata key */
+"Entitled to Play" = "Berhak Diputar";
+
+/* Metadata key */
+"Episode #" = "Episode #";
+
+/* Metadata key */
+"Episode ID" = "ID Episode";
+
+/* Metadata key */
+"Episode Index" = "Indeks Episode";
+
+/* Metadata key */
+"Explicit Content" = "Konten Eksplisit";
+
+/* Metadata key */
+"FANZA Content ID" = "ID Konten FANZA";
+
+/* Metadata key */
+"FANZA Content URL" = "URL Konten FANZA";
+
+/* Metadata key */
+"FANZA Product ID" = "ID Produk FANZA";
+
+/* Metadata key */
+"FOD Content URL" = "URL Konten FOD";
+
+/* Metadata key */
+"FOD Episode ID" = "ID Episode FOD";
+
+/* Metadata key */
+"FOD Movie ID" = "ID Film FOD";
+
+/* Metadata key */
+"FOD Show ID" = "ID Serial FOD";
+
+/* Metadata key */
+"Fractional Episode Number" = "Nomor Episode Pecahan";
+
+/* Metadata key */
+"ISRC" = "ISRC";
+
+/* Metadata key */
+"Is First Episode" = "Episode Pertama";
+
+/* Metadata key */
+"Japan DVD Content ID" = "ID Konten Japan DVD";
+
+/* Metadata key */
+"Japan DVD Content URL" = "URL Konten Japan DVD";
+
+/* Metadata key */
+"Japan DVD Product ID" = "ID Produk Japan DVD";
+
+/* Metadata key */
+"Liner Notes" = "Catatan Sampul";
+
+/* Metadata key */
+"MGS Content ID" = "ID Konten MGS";
+
+/* Metadata key */
+"MGS Content URL" = "URL Konten MGS";
+
+/* Metadata key */
+"MGS Product ID" = "ID Produk MGS";
+
+/* Metadata key */
+"MissAV Content ID" = "ID Konten MissAV";
+
+/* Metadata key */
+"MissAV Content URL" = "URL Konten MissAV";
+
+/* Metadata key */
+"MissAV Product ID" = "ID Produk MissAV";
+
+/* Metadata key */
+"Movie ID" = "ID Film";
+
+/* Metadata key */
+"Music ID" = "ID Musik";
+
+/* Metadata key */
+"Netflix Content Advisories" = "Peringatan Konten Netflix";
+
+/* Metadata key */
+"Netflix Content URL" = "URL Konten Netflix";
+
+/* Metadata key */
+"Netflix Episode ID" = "ID Episode Netflix";
+
+/* Metadata key */
+"Netflix Genre" = "Genre Netflix";
+
+/* Metadata key */
+"Netflix Movie ID" = "ID Film Netflix";
+
+/* Metadata key */
+"Netflix Rating" = "Rating Netflix";
+
+/* Metadata key */
+"Netflix Rating Description" = "Deskripsi Rating Netflix";
+
+/* Metadata key */
+"Netflix Show ID" = "ID Serial Netflix";
+
+/* Metadata key */
+"Network" = "Jaringan";
+
+/* Metadata key */
+"Original Spoken Language" = "Bahasa Lisan Asli";
+
+/* Metadata key */
+"Paramount+ Content URL" = "URL Konten Paramount+";
+
+/* Metadata key */
+"Paramount+ Episode ID" = "ID Episode Paramount+";
+
+/* Metadata key */
+"Paramount+ Movie ID" = "ID Film Paramount+";
+
+/* Metadata key */
+"Performers" = "Pemain";
+
+/* Metadata key */
+"Playlist ID" = "ID Playlist";
+
+/* Metadata key */
+"Prime Video Content ID" = "ID Konten Prime Video";
+
+/* Metadata key */
+"Prime Video Content URL" = "URL Konten Prime Video";
+
+/* Metadata key */
+"Product ID" = "ID Produk";
+
+/* Metadata key */
+"Rating Description" = "Deskripsi Rating";
+
+/* Metadata key */
+"Rating Name" = "Nama Rating";
+
+/* Metadata key */
+"Rating System" = "Sistem Rating";
+
+/* Metadata key */
+"Rating System Type" = "Jenis Sistem Rating";
+
+/* Metadata key */
+"Rating Value" = "Nilai Rating";
+
+/* Metadata key */
+"Recommended Age" = "Usia yang Disarankan";
+
+/* Metadata key */
+"Season" = "Musim";
+
+/* Metadata key */
+"Season Adam ID" = "ID Adam Musim";
+
+/* Metadata key */
+"Season Canonical ID" = "ID Kanonis Musim";
+
+/* Metadata key */
+"Season ID" = "ID Musim";
+
+/* Metadata key */
+"Season URL" = "URL Musim";
+
+/* Metadata key */
+"Series ID" = "ID Serial";
+
+/* Metadata key */
+"Series Name" = "Nama Serial";
+
+/* Metadata key */
+"Service" = "Layanan";
+
+/* Metadata key */
+"Show ID" = "ID Serial";
+
+/* Metadata key */
+"Show URL" = "URL Serial";
+
+/* Metadata key */
+"Spotify Album ID" = "ID Album Spotify";
+
+/* Metadata key */
+"Spotify Artist ID" = "ID Artis Spotify";
+
+/* Metadata key */
+"Spotify Track ID" = "ID Trek Spotify";
+
+/* Metadata key */
+"Spotify URL" = "URL Spotify";
+
+/* Metadata key */
+"TMDb Content ID" = "ID Konten TMDb";
+
+/* Metadata key */
+"Track Count" = "Jumlah Trek";
+
+/* Metadata key */
+"Track ID" = "ID Trek";
+
+/* Metadata key */
+"U-NEXT Content URL" = "URL Konten U-NEXT";
+
+/* Metadata key */
+"U-NEXT Episode ID" = "ID Episode U-NEXT";
+
+/* Metadata key */
+"U-NEXT Movie ID" = "ID Film U-NEXT";
+
+/* Metadata key */
+"U-NEXT Show ID" = "ID Serial U-NEXT";
+
+/* Metadata key */
+"VMX Content ID" = "ID Konten VMX";
+
+/* Metadata key */
+"VMX Content URL" = "URL Konten VMX";
+
+/* Metadata key */
+"Video ID" = "ID Video";
+
+/* Metadata key */
+"Vidio Content URL" = "URL Konten Vidio";
+
+/* Metadata key */
+"Vidio Episode ID" = "ID Episode Vidio";
+
+/* Metadata key */
+"Vidio Genre" = "Genre Vidio";
+
+/* Metadata key */
+"Vidio Movie ID" = "ID Film Vidio";
+
+/* Metadata key */
+"Vidio Rating" = "Rating Vidio";
+
+/* Metadata key */
+"Vidio Show ID" = "ID Serial Vidio";
+
+/* Metadata key */
+"Wavve Content URL" = "URL Konten Wavve";
+
+/* Metadata key */
+"Wavve Episode ID" = "ID Episode Wavve";
+
+/* Metadata key */
+"Wavve Movie ID" = "ID Film Wavve";
+
+/* Metadata key */
+"Wavve Show ID" = "ID Serial Wavve";
+
+/* Metadata key */
+"YouTube Music Album ID" = "ID Album YouTube Music";
+
+/* Metadata key */
+"YouTube Music Artist ID" = "ID Artis YouTube Music";
+
+/* Metadata key */
+"YouTube Music URL" = "URL YouTube Music";
+
+/* Metadata key */
+"YouTube Music Video ID" = "ID Video YouTube Music";
+
+/* Metadata key */
+"artistID" = "ID Artis";
+
+/* Metadata key */
+"contentID" = "ID Konten";
+
+/* Metadata key */
+"iTunes URL" = "URL iTunes";
+
+/* Metadata key */
+"playlistID" = "ID Playlist";
+
+/* Metadata key */
+"Adult-Wiki Content ID" = "ID Konten Adult-Wiki";
+
+/* Metadata key */
+"Adult-Wiki Product ID" = "ID Produk Adult-Wiki";
+
+/* Metadata key */
+"Adult-Wiki Content URL" = "URL Konten Adult-Wiki";
+
+/* Metadata key */
+"iTunes U" = "iTunes U";
+
+/* Metadata key */
+"Unofficial Subtitle" = "Subjudul Tidak Resmi";
+
+/* Metadata key */
+"Unofficial Language" = "Bahasa Tidak Resmi";
+
+/* Metadata key */
+"Unofficial ASIN" = "ASIN Tidak Resmi";
+
+/* Metadata key */
+"Unofficial Abridged" = "Ringkasan Tidak Resmi";
+
+/* Metadata key */
+"Apple TV Movie ID" = "ID Film Apple TV";
+
+/* Metadata key */
+"Label" = "Label";
+
+/* Metadata key */
+"Provider" = "Penyedia";
+
+/* Metadata key */
+"Released" = "Dirilis";
+
+/* Metadata key */
+"Service Additional Content ID" = "ID Konten Tambahan Layanan";
+
+/* Metadata key */
+"Service Content ID" = "ID Konten Layanan";
+
+/* Metadata key */
+"Service Episode ID" = "ID Episode Layanan";
