@@ -285,6 +285,9 @@ NSString *localizedMetadataKeyName(NSString *key)
             MP42MetadataKeyPrimeVideoContentURL:
                 NSLocalizedStringFromTableInBundle(@"Prime Video Content URL", @"Localizable", bundle, nil),
 
+            MP42MetadataKeyPrimeVideoGenre:
+                NSLocalizedStringFromTableInBundle(@"Prime Video Genre", @"Localizable", bundle, nil),
+
             // MARK: FANZA Extended Metadata
 
             MP42MetadataKeyFANZAContentID:
@@ -475,6 +478,14 @@ NSString *localizedMetadataKeyName(NSString *key)
             MP42MetadataKeyDisneyPlusContentURL:
                 NSLocalizedStringFromTableInBundle(
                     @"Disney+ Content URL",
+                    @"Localizable",
+                    bundle,
+                    nil
+                ),
+
+            MP42MetadataKeyDisneyPlusGenre:
+                NSLocalizedStringFromTableInBundle(
+                    @"Disney+ Genre",
                     @"Localizable",
                     bundle,
                     nil
@@ -804,6 +815,9 @@ NSString *const MP42MetadataKeyPrimeVideoContentID =
 NSString *const MP42MetadataKeyPrimeVideoContentURL =
     @"Prime Video Content URL";
 
+NSString *const MP42MetadataKeyPrimeVideoGenre =
+    @"Prime Video Genre";
+
 
 // MARK: - FANZA Extended Metadata
 
@@ -955,6 +969,9 @@ NSString *const MP42MetadataKeyDisneyPlusEpisodeID =
 
 NSString *const MP42MetadataKeyDisneyPlusContentURL =
     @"Disney+ Content URL";
+
+NSString *const MP42MetadataKeyDisneyPlusGenre =
+    @"Disney+ Genre";
 
 // MARK: - Vidio Extended Metadata
 

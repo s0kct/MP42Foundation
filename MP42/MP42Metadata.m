@@ -205,6 +205,7 @@
         // Prime Video Extended Metadata
         MP42MetadataKeyPrimeVideoContentID,
         MP42MetadataKeyPrimeVideoContentURL,
+        MP42MetadataKeyPrimeVideoGenre,
         
         // FANZA Extended Metadata
         MP42MetadataKeyFANZAContentID,
@@ -275,6 +276,7 @@
         MP42MetadataKeyDisneyPlusShowID,
         MP42MetadataKeyDisneyPlusEpisodeID,
         MP42MetadataKeyDisneyPlusContentURL,
+        MP42MetadataKeyDisneyPlusGenre,
         
         // FOD Extended Metadata
         MP42MetadataKeyFODMovieID,
@@ -425,6 +427,8 @@
         // Prime Video Extended Metadata
         MP42MetadataKeyPrimeVideoContentID,
         MP42MetadataKeyPrimeVideoContentURL,
+        MP42MetadataKeyPrimeVideoGenre,
+        MP42MetadataKeyDisneyPlusGenre,
         
         // FANZA Extended Metadata
         MP42MetadataKeyFANZAContentID,
@@ -1133,6 +1137,10 @@
     [self readABMetadataFromFileHandle:sourceHandle
                            metadataKey:MP42MetadataKeyPrimeVideoContentURL
                                   name:"PrimeVideoContentURL"];
+
+    [self readABMetadataFromFileHandle:sourceHandle
+                           metadataKey:MP42MetadataKeyPrimeVideoGenre
+                                  name:"PrimeVideoGenre"];
     
     // ============================================================
     // FANZA Extended Metadata READ
@@ -1206,6 +1214,10 @@
     [self readABMetadataFromFileHandle:sourceHandle
                            metadataKey:MP42MetadataKeyDisneyPlusContentURL
                                   name:"DisneyPlusContentURL"];
+
+    [self readABMetadataFromFileHandle:sourceHandle
+                           metadataKey:MP42MetadataKeyDisneyPlusGenre
+                                  name:"DisneyPlusGenre"];
     
     
     // ============================================================
@@ -2063,6 +2075,10 @@
     [self writeABMetadataWithFileHandle:fileHandle
                             metadataKey:MP42MetadataKeyPrimeVideoContentURL
                                    name:"PrimeVideoContentURL"];
+
+    [self writeABMetadataWithFileHandle:fileHandle
+                            metadataKey:MP42MetadataKeyPrimeVideoGenre
+                                   name:"PrimeVideoGenre"];
     
     // ============================================================
     // FANZA Extended Metadata WRITE
@@ -2126,6 +2142,10 @@
     [self writeABMetadataWithFileHandle:fileHandle
                             metadataKey:MP42MetadataKeyDisneyPlusContentURL
                                    name:"DisneyPlusContentURL"];
+
+    [self writeABMetadataWithFileHandle:fileHandle
+                            metadataKey:MP42MetadataKeyDisneyPlusGenre
+                                   name:"DisneyPlusGenre"];
     
     // VMX Extended Metadata WRITE
     // ============================================================

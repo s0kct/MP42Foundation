@@ -129,6 +129,7 @@ extern NSString *const MP42MetadataKeyTMDbContentID;            // String
 // Prime Video Extended Metadata keys
 extern NSString *const MP42MetadataKeyPrimeVideoContentID;      // String
 extern NSString *const MP42MetadataKeyPrimeVideoContentURL;     // String
+extern NSString *const MP42MetadataKeyPrimeVideoGenre;          // String
 
 // VMX Extended Metadata keys
 extern NSString *const MP42MetadataKeyService;                  // String
@@ -226,6 +227,7 @@ extern NSString *const MP42MetadataKeyDisneyPlusMovieID;       // String
 extern NSString *const MP42MetadataKeyDisneyPlusShowID;        // String
 extern NSString *const MP42MetadataKeyDisneyPlusEpisodeID;     // String
 extern NSString *const MP42MetadataKeyDisneyPlusContentURL;    // String
+extern NSString *const MP42MetadataKeyDisneyPlusGenre;         // String
 
 // Apple Music Extended Metadata keys
 extern NSString *const MP42MetadataKeyAppleMusicContentID;      // String
