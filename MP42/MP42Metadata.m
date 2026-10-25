@@ -192,6 +192,7 @@
         MP42MetadataKeyAppleTVRatingSystem,
         MP42MetadataKeyAppleTVRatingSystemType,
         MP42MetadataKeyAppleTVRatingValue,
+        MP42MetadataKeyAppleTVRatingReason,
         MP42MetadataKeyAppleTVEpisodeIndex,
         MP42MetadataKeyAppleTVFractionalEpisodeNumber,
         MP42MetadataKeyAppleTVIsFirstEpisode,
@@ -414,6 +415,7 @@
         MP42MetadataKeyAppleTVRatingSystem,
         MP42MetadataKeyAppleTVRatingSystemType,
         MP42MetadataKeyAppleTVRatingValue,
+        MP42MetadataKeyAppleTVRatingReason,
         MP42MetadataKeyAppleTVEpisodeIndex,
         MP42MetadataKeyAppleTVFractionalEpisodeNumber,
         MP42MetadataKeyAppleTVIsFirstEpisode,
@@ -1352,6 +1354,7 @@
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyAppleTVRatingSystem name:"AppleTVRatingSystem"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyAppleTVRatingSystemType name:"AppleTVRatingSystemType"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyAppleTVRatingValue name:"AppleTVRatingValue"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyAppleTVRatingReason name:"AppleTVRatingReason"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyAppleTVEpisodeIndex name:"AppleTVEpisodeIndex"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyAppleTVFractionalEpisodeNumber name:"AppleTVFractionalEpisodeNumber"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyAppleTVIsFirstEpisode name:"AppleTVIsFirstEpisode"];
@@ -1953,6 +1956,9 @@
             MP42MetadataKeyAppleTVRatingValue:
                 @"Apple TV Rating Value",
             
+            MP42MetadataKeyAppleTVRatingReason:
+                @"Apple TV Rating Reason",
+            
             MP42MetadataKeyAppleTVEpisodeIndex:
                 @"Apple TV Episode Index",
             
@@ -2275,6 +2281,7 @@
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyAppleTVRatingSystem name:"AppleTVRatingSystem"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyAppleTVRatingSystemType name:"AppleTVRatingSystemType"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyAppleTVRatingValue name:"AppleTVRatingValue"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyAppleTVRatingReason name:"AppleTVRatingReason"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyAppleTVEpisodeIndex name:"AppleTVEpisodeIndex"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyAppleTVFractionalEpisodeNumber name:"AppleTVFractionalEpisodeNumber"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyAppleTVIsFirstEpisode name:"AppleTVIsFirstEpisode"];

@@ -615,6 +615,9 @@ NSString *localizedMetadataKeyName(NSString *key)
             MP42MetadataKeyAppleTVRatingValue:
                 NSLocalizedStringFromTableInBundle(@"Apple TV Rating Value", @"Localizable", bundle, nil),
 
+            MP42MetadataKeyAppleTVRatingReason:
+                NSLocalizedStringFromTableInBundle(@"Apple TV Rating Reason", @"Localizable", bundle, nil),
+
             MP42MetadataKeyAppleTVEpisodeIndex:
                 NSLocalizedStringFromTableInBundle(@"Apple TV Episode Index", @"Localizable", bundle, nil),
 
@@ -1075,6 +1078,9 @@ NSString *const MP42MetadataKeyAppleTVRatingSystemType =
 
 NSString *const MP42MetadataKeyAppleTVRatingValue =
     @"Apple TV Rating Value";
+
+NSString *const MP42MetadataKeyAppleTVRatingReason =
+    @"Apple TV Rating Reason";
 
 NSString *const MP42MetadataKeyAppleTVEpisodeIndex =
     @"Apple TV Episode Index";

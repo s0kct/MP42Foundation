@@ -540,6 +540,7 @@
 
 /* Metadata key */
 "Apple TV Rating Value" = "Bewertungswert Apple TV";
+"Apple TV Rating Reason" = "Bewertungsgrund Apple TV";
 
 /* Metadata key */
 "Apple TV Roles" = "Rollen Apple TV";

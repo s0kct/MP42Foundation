@@ -540,6 +540,7 @@
 
 /* Metadata key */
 "Apple TV Rating Value" = "Nilai Rating Apple TV";
+"Apple TV Rating Reason" = "Alasan Rating Apple TV";
 
 /* Metadata key */
 "Apple TV Roles" = "Peran Apple TV";
