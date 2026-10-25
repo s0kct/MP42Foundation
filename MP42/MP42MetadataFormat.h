@@ -260,6 +260,7 @@ extern NSString *const MP42MetadataKeyAppleTVRatingName;        // String
 extern NSString *const MP42MetadataKeyAppleTVRatingSystem;      // String
 extern NSString *const MP42MetadataKeyAppleTVRatingSystemType;  // String
 extern NSString *const MP42MetadataKeyAppleTVRatingValue;       // Int/String
+extern NSString *const MP42MetadataKeyAppleTVRatingReason;      // String
 
 extern NSString *const MP42MetadataKeyAppleTVEpisodeIndex;      // Int/String
 extern NSString *const MP42MetadataKeyAppleTVFractionalEpisodeNumber; // Float/String
