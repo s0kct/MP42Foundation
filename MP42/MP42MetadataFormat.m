@@ -496,6 +496,12 @@ NSString *localizedMetadataKeyName(NSString *key)
             MP42MetadataKeyFODEpisodeID: NSLocalizedStringFromTableInBundle(@"FOD Episode ID", @"Localizable", bundle, nil),
             MP42MetadataKeyFODContentURL: NSLocalizedStringFromTableInBundle(@"FOD Content URL", @"Localizable", bundle, nil),
 
+            // MARK: Tubi TV Extended Metadata
+            MP42MetadataKeyTubiMovieID: NSLocalizedStringFromTableInBundle(@"Tubi Movie ID", @"Localizable", bundle, nil),
+            MP42MetadataKeyTubiShowID: NSLocalizedStringFromTableInBundle(@"Tubi Show ID", @"Localizable", bundle, nil),
+            MP42MetadataKeyTubiEpisodeID: NSLocalizedStringFromTableInBundle(@"Tubi Episode ID", @"Localizable", bundle, nil),
+            MP42MetadataKeyTubiContentURL: NSLocalizedStringFromTableInBundle(@"Tubi Content URL", @"Localizable", bundle, nil),
+
             // MARK: Vidio Extended Metadata
 
             MP42MetadataKeyVidioGenre:
@@ -1001,6 +1007,12 @@ NSString *const MP42MetadataKeyFODMovieID = @"FOD Movie ID";
 NSString *const MP42MetadataKeyFODShowID = @"FOD Show ID";
 NSString *const MP42MetadataKeyFODEpisodeID = @"FOD Episode ID";
 NSString *const MP42MetadataKeyFODContentURL = @"FOD Content URL";
+
+// MARK: - Tubi TV Extended Metadata
+NSString *const MP42MetadataKeyTubiMovieID = @"Tubi Movie ID";
+NSString *const MP42MetadataKeyTubiShowID = @"Tubi Show ID";
+NSString *const MP42MetadataKeyTubiEpisodeID = @"Tubi Episode ID";
+NSString *const MP42MetadataKeyTubiContentURL = @"Tubi Content URL";
 
 // MARK: - Apple Music Extended Metadata
 

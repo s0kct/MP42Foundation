@@ -970,3 +970,15 @@
 
 /* Metadata key */
 "Service Episode ID" = "ID Episode Layanan";
+
+/* Metadata key */
+"Tubi Movie ID" = "ID Film Tubi";
+
+/* Metadata key */
+"Tubi Show ID" = "ID Serial Tubi";
+
+/* Metadata key */
+"Tubi Episode ID" = "ID Episode Tubi";
+
+/* Metadata key */
+"Tubi Content URL" = "URL Konten Tubi";
