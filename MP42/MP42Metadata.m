@@ -285,6 +285,12 @@
         MP42MetadataKeyFODEpisodeID,
         MP42MetadataKeyFODContentURL,
 
+        // Tubi TV Extended Metadata
+        MP42MetadataKeyTubiMovieID,
+        MP42MetadataKeyTubiShowID,
+        MP42MetadataKeyTubiEpisodeID,
+        MP42MetadataKeyTubiContentURL,
+
         // Vidio Extended Metadata
         MP42MetadataKeyVidioGenre,
         MP42MetadataKeyVidioRating,
@@ -510,6 +516,12 @@
         MP42MetadataKeyFODShowID,
         MP42MetadataKeyFODEpisodeID,
         MP42MetadataKeyFODContentURL,
+
+        // Tubi TV Extended Metadata
+        MP42MetadataKeyTubiMovieID,
+        MP42MetadataKeyTubiShowID,
+        MP42MetadataKeyTubiEpisodeID,
+        MP42MetadataKeyTubiContentURL,
 
         // Vidio Extended Metadata
         MP42MetadataKeyVidioGenre,
@@ -1322,6 +1334,12 @@
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyFODShowID name:"FODFodShowID"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyFODEpisodeID name:"FODFodEpisodeID"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyFODContentURL name:"FODFodContentURL"];
+
+    // Tubi TV Extended Metadata READ
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyTubiMovieID name:"TubiMovieID"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyTubiShowID name:"TubiShowID"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyTubiEpisodeID name:"TubiEpisodeID"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyTubiContentURL name:"TubiContentURL"];
 
     // Vidio Extended Metadata READ
     // ============================================================
@@ -2249,6 +2267,12 @@
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyFODShowID name:"FODFodShowID"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyFODEpisodeID name:"FODFodEpisodeID"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyFODContentURL name:"FODFodContentURL"];
+
+    // Tubi TV Extended Metadata WRITE
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyTubiMovieID name:"TubiMovieID"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyTubiShowID name:"TubiShowID"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyTubiEpisodeID name:"TubiEpisodeID"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyTubiContentURL name:"TubiContentURL"];
 
     // Vidio Extended Metadata WRITE
     // ============================================================

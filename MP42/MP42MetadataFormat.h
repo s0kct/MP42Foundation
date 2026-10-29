@@ -178,6 +178,12 @@ extern NSString *const MP42MetadataKeyFODShowID;
 extern NSString *const MP42MetadataKeyFODEpisodeID;
 extern NSString *const MP42MetadataKeyFODContentURL;
 
+// Tubi TV Extended Metadata keys
+extern NSString *const MP42MetadataKeyTubiMovieID;
+extern NSString *const MP42MetadataKeyTubiShowID;
+extern NSString *const MP42MetadataKeyTubiEpisodeID;
+extern NSString *const MP42MetadataKeyTubiContentURL;
+
 // FANZA Extended Metadata keys
 extern NSString *const MP42MetadataKeyFANZAContentID;          // String
 extern NSString *const MP42MetadataKeyFANZAProductID;          // String
