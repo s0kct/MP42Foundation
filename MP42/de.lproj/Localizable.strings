@@ -880,6 +880,12 @@
 
 /* Metadata key */
 "Vidio Genre" = "Genre Vidio";
+"VMX Genre" = "Genre VMX";
+"VMX Rating" = "Bewertung VMX";
+"Paramount+ Genre" = "Genre Paramount+";
+"Tubi TV Genre" = "Genre Tubi TV";
+"Wavve Genre" = "Genre Wavve";
+"FOD Genre" = "Genre FOD";
 
 /* Metadata key */
 "Vidio Movie ID" = "Film-ID Vidio";

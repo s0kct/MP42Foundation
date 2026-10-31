@@ -120,6 +120,7 @@
         MP42MetadataKeyProducer,
         MP42MetadataKeyExecProducer,
         MP42MetadataKeyScreenwriters,
+        MP42MetadataKeyComposer,
         MP42MetadataKeyCopyright,
         MP42MetadataKeyEncodingTool,
         MP42MetadataKeyEncodedBy,
@@ -138,7 +139,6 @@
         MP42MetadataKeyOnlineExtras,
         MP42MetadataKeySongDescription,
         MP42MetadataKeyArtDirector,
-        MP42MetadataKeyComposer,
         MP42MetadataKeyArranger,
         MP42MetadataKeyAuthor,
         MP42MetadataKeyLyrics,
@@ -174,6 +174,18 @@
         MP42MetadataKeyTMDbContentID,
 
         // AB / Apple TV Extended Metadata
+        MP42MetadataKeyPrimeVideoGenre,
+        MP42MetadataKeyNetflixGenre,
+        MP42MetadataKeyNetflixRating,
+        MP42MetadataKeyDisneyPlusGenre,
+        MP42MetadataKeyVidioGenre,
+        MP42MetadataKeyVidioRating,
+        MP42MetadataKeyVMXGenre,
+        MP42MetadataKeyVMXRating,
+        MP42MetadataKeyParamountPlusGenre,
+        MP42MetadataKeyTubiGenre,
+        MP42MetadataKeyWavveGenre,
+        MP42MetadataKeyFODGenre,
         MP42MetadataKeyAppleTVContentID,
         MP42MetadataKeyAppleTVShowID,
         MP42MetadataKeyAppleTVSeasonID,
@@ -206,7 +218,6 @@
         // Prime Video Extended Metadata
         MP42MetadataKeyPrimeVideoContentID,
         MP42MetadataKeyPrimeVideoContentURL,
-        MP42MetadataKeyPrimeVideoGenre,
         
         // FANZA Extended Metadata
         MP42MetadataKeyFANZAContentID,
@@ -256,9 +267,7 @@
         MP42MetadataKeyParamountPlusContentURL,
 
         // Netflix Extended Metadata
-        MP42MetadataKeyNetflixGenre,
         MP42MetadataKeyNetflixRatingDescription,
-        MP42MetadataKeyNetflixRating,
         MP42MetadataKeyNetflixContentAdvisories,
         MP42MetadataKeyNetflixMovieID,
         MP42MetadataKeyNetflixShowID,
@@ -277,7 +286,6 @@
         MP42MetadataKeyDisneyPlusShowID,
         MP42MetadataKeyDisneyPlusEpisodeID,
         MP42MetadataKeyDisneyPlusContentURL,
-        MP42MetadataKeyDisneyPlusGenre,
         
         // FOD Extended Metadata
         MP42MetadataKeyFODMovieID,
@@ -292,8 +300,6 @@
         MP42MetadataKeyTubiContentURL,
 
         // Vidio Extended Metadata
-        MP42MetadataKeyVidioGenre,
-        MP42MetadataKeyVidioRating,
         MP42MetadataKeyVidioContentURL,
         MP42MetadataKeyVidioMovieID,
         MP42MetadataKeyVidioShowID,
@@ -525,6 +531,12 @@
 
         // Vidio Extended Metadata
         MP42MetadataKeyVidioGenre,
+        MP42MetadataKeyVMXGenre,
+        MP42MetadataKeyVMXRating,
+        MP42MetadataKeyParamountPlusGenre,
+        MP42MetadataKeyTubiGenre,
+        MP42MetadataKeyWavveGenre,
+        MP42MetadataKeyFODGenre,
         MP42MetadataKeyVidioRating,
         MP42MetadataKeyVidioContentURL,
         MP42MetadataKeyVidioMovieID,
@@ -1344,6 +1356,12 @@
     // Vidio Extended Metadata READ
     // ============================================================
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyVidioGenre name:"VidioGenre"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyVMXGenre name:"VMXGenre"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyVMXRating name:"VMXRating"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyParamountPlusGenre name:"ParamountPlusGenre"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyTubiGenre name:"TubiGenre"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyWavveGenre name:"WavveGenre"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyFODGenre name:"FODGenre"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyVidioRating name:"VidioRating"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyVidioContentURL name:"VidioContentURL"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyVidioMovieID name:"VidioMovieID"];
@@ -2076,6 +2094,8 @@
     // Universal Extended Metadata WRITE
     // ============================================================
     
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyVMXGenre name:"VMXGenre"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyVMXRating name:"VMXRating"];
     [self writeABMetadataWithFileHandle:fileHandle
                             metadataKey:MP42MetadataKeyDuration
                                    name:"Duration"];
@@ -2277,6 +2297,10 @@
     // Vidio Extended Metadata WRITE
     // ============================================================
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyVidioGenre name:"VidioGenre"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyParamountPlusGenre name:"ParamountPlusGenre"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyTubiGenre name:"TubiGenre"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyWavveGenre name:"WavveGenre"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyFODGenre name:"FODGenre"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyVidioRating name:"VidioRating"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyVidioContentURL name:"VidioContentURL"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyVidioMovieID name:"VidioMovieID"];

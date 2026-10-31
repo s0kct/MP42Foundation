@@ -166,6 +166,12 @@ extern NSString *const MP42MetadataKeyCatchplayContentAdvisories;
 
 // Vidio Extended Metadata keys
 extern NSString *const MP42MetadataKeyVidioGenre;              // String
+extern NSString *const MP42MetadataKeyVMXGenre;              // String
+extern NSString *const MP42MetadataKeyVMXRating;             // String
+extern NSString *const MP42MetadataKeyParamountPlusGenre;              // String
+extern NSString *const MP42MetadataKeyTubiGenre;              // String
+extern NSString *const MP42MetadataKeyWavveGenre;              // String
+extern NSString *const MP42MetadataKeyFODGenre;              // String
 extern NSString *const MP42MetadataKeyVidioRating;             // String
 extern NSString *const MP42MetadataKeyVidioContentURL;         // String
 extern NSString *const MP42MetadataKeyVidioMovieID;            // String

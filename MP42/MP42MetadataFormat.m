@@ -506,6 +506,18 @@ NSString *localizedMetadataKeyName(NSString *key)
 
             MP42MetadataKeyVidioGenre:
                 NSLocalizedStringFromTableInBundle(@"Vidio Genre", @"Localizable", bundle, nil),
+            MP42MetadataKeyVMXGenre:
+                NSLocalizedStringFromTableInBundle(@"VMX Genre", @"Localizable", bundle, nil),
+            MP42MetadataKeyVMXRating:
+                NSLocalizedStringFromTableInBundle(@"VMX Rating", @"Localizable", bundle, nil),
+            MP42MetadataKeyParamountPlusGenre:
+                NSLocalizedStringFromTableInBundle(@"Paramount+ Genre", @"Localizable", bundle, nil),
+            MP42MetadataKeyTubiGenre:
+                NSLocalizedStringFromTableInBundle(@"Tubi TV Genre", @"Localizable", bundle, nil),
+            MP42MetadataKeyWavveGenre:
+                NSLocalizedStringFromTableInBundle(@"Wavve Genre", @"Localizable", bundle, nil),
+            MP42MetadataKeyFODGenre:
+                NSLocalizedStringFromTableInBundle(@"FOD Genre", @"Localizable", bundle, nil),
 
             MP42MetadataKeyVidioRating:
                 NSLocalizedStringFromTableInBundle(@"Vidio Rating", @"Localizable", bundle, nil),
@@ -986,6 +998,18 @@ NSString *const MP42MetadataKeyDisneyPlusGenre =
 
 NSString *const MP42MetadataKeyVidioGenre =
     @"Vidio Genre";
+NSString *const MP42MetadataKeyVMXGenre =
+    @"VMX Genre";
+NSString *const MP42MetadataKeyVMXRating =
+    @"VMX Rating";
+NSString *const MP42MetadataKeyParamountPlusGenre =
+    @"Paramount+ Genre";
+NSString *const MP42MetadataKeyTubiGenre =
+    @"Tubi TV Genre";
+NSString *const MP42MetadataKeyWavveGenre =
+    @"Wavve Genre";
+NSString *const MP42MetadataKeyFODGenre =
+    @"FOD Genre";
 
 NSString *const MP42MetadataKeyVidioRating =
     @"Vidio Rating";
