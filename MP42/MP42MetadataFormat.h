@@ -131,6 +131,11 @@ extern NSString *const MP42MetadataKeyPrimeVideoContentID;      // String
 extern NSString *const MP42MetadataKeyPrimeVideoContentURL;     // String
 extern NSString *const MP42MetadataKeyPrimeVideoGenre;          // String
 
+// DATA18 Extended Metadata keys
+extern NSString *const MP42MetadataKeyDATA18ContentID;      // String
+extern NSString *const MP42MetadataKeyDATA18ContentURL;     // String
+extern NSString *const MP42MetadataKeyDATA18Genre;          // String
+
 // VMX Extended Metadata keys
 extern NSString *const MP42MetadataKeyService;                  // String
 extern NSString *const MP42MetadataKeyVMXContentID;             // String

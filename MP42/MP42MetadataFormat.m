@@ -288,6 +288,16 @@ NSString *localizedMetadataKeyName(NSString *key)
             MP42MetadataKeyPrimeVideoGenre:
                 NSLocalizedStringFromTableInBundle(@"Prime Video Genre", @"Localizable", bundle, nil),
 
+            // MARK: DATA18 Extended Metadata
+            MP42MetadataKeyDATA18ContentID:
+                NSLocalizedStringFromTableInBundle(@"DATA18 Content ID", @"Localizable", bundle, nil),
+
+            MP42MetadataKeyDATA18ContentURL:
+                NSLocalizedStringFromTableInBundle(@"DATA18 Content URL", @"Localizable", bundle, nil),
+
+            MP42MetadataKeyDATA18Genre:
+                NSLocalizedStringFromTableInBundle(@"DATA18 Genre", @"Localizable", bundle, nil),
+
             // MARK: FANZA Extended Metadata
 
             MP42MetadataKeyFANZAContentID:
@@ -838,6 +848,16 @@ NSString *const MP42MetadataKeyPrimeVideoContentURL =
 
 NSString *const MP42MetadataKeyPrimeVideoGenre =
     @"Prime Video Genre";
+
+// MARK: - DATA18 Extended Metadata
+NSString *const MP42MetadataKeyDATA18ContentID =
+    @"DATA18 Content ID";
+
+NSString *const MP42MetadataKeyDATA18ContentURL =
+    @"DATA18 Content URL";
+
+NSString *const MP42MetadataKeyDATA18Genre =
+    @"DATA18 Genre";
 
 
 // MARK: - FANZA Extended Metadata

@@ -175,6 +175,11 @@
 
         // AB / Apple TV Extended Metadata
         MP42MetadataKeyPrimeVideoGenre,
+
+        // DATA18 Extended Metadata
+        MP42MetadataKeyDATA18ContentID,
+        MP42MetadataKeyDATA18ContentURL,
+        MP42MetadataKeyDATA18Genre,
         MP42MetadataKeyNetflixGenre,
         MP42MetadataKeyNetflixRating,
         MP42MetadataKeyDisneyPlusGenre,
@@ -442,6 +447,11 @@
         MP42MetadataKeyPrimeVideoContentID,
         MP42MetadataKeyPrimeVideoContentURL,
         MP42MetadataKeyPrimeVideoGenre,
+
+        // DATA18 Extended Metadata
+        MP42MetadataKeyDATA18ContentID,
+        MP42MetadataKeyDATA18ContentURL,
+        MP42MetadataKeyDATA18Genre,
         MP42MetadataKeyDisneyPlusGenre,
         
         // FANZA Extended Metadata
@@ -1167,6 +1177,11 @@
     [self readABMetadataFromFileHandle:sourceHandle
                            metadataKey:MP42MetadataKeyPrimeVideoGenre
                                   name:"PrimeVideoGenre"];
+
+    // DATA18 Extended Metadata READ
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyDATA18ContentID name:"DATA18ContentID"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyDATA18ContentURL name:"DATA18ContentURL"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyDATA18Genre name:"DATA18Genre"];
     
     // ============================================================
     // FANZA Extended Metadata READ
@@ -2123,6 +2138,11 @@
     [self writeABMetadataWithFileHandle:fileHandle
                             metadataKey:MP42MetadataKeyPrimeVideoGenre
                                    name:"PrimeVideoGenre"];
+
+    // DATA18 Extended Metadata WRITE
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyDATA18ContentID name:"DATA18ContentID"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyDATA18ContentURL name:"DATA18ContentURL"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyDATA18Genre name:"DATA18Genre"];
     
     // ============================================================
     // FANZA Extended Metadata WRITE
