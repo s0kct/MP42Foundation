@@ -988,3 +988,12 @@
 
 /* Metadata key */
 "Tubi Content URL" = "Inhalts-URL Tubi";
+
+/* A-B: label anotasi yang dilengkapi (2026-11-12) */
+"Prime Video Genre" = "Genre Prime Video";
+"DATA18 Content ID" = "Inhalts-ID DATA18";
+"DATA18 Content URL" = "Inhalts-URL DATA18";
+"DATA18 Genre" = "Genre DATA18";
+"DUGA Content ID" = "Inhalts-ID DUGA";
+"DUGA Product ID" = "Produkt-ID DUGA";
+"DUGA Content URL" = "Inhalts-URL DUGA";

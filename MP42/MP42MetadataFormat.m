@@ -354,6 +354,13 @@ NSString *localizedMetadataKeyName(NSString *key)
             MP42MetadataKeyJapanDVDProductID: NSLocalizedStringFromTableInBundle(@"Japan DVD Product ID", @"Localizable", bundle, nil),
             MP42MetadataKeyJapanDVDContentURL: NSLocalizedStringFromTableInBundle(@"Japan DVD Content URL", @"Localizable", bundle, nil),
 
+            // DUGA Extended Metadata
+            MP42MetadataKeyDUGAContentID: NSLocalizedStringFromTableInBundle(@"DUGA Content ID", @"Localizable", bundle, nil),
+            MP42MetadataKeyDUGAProductID: NSLocalizedStringFromTableInBundle(@"DUGA Product ID", @"Localizable", bundle, nil),
+            MP42MetadataKeyDUGAContentURL: NSLocalizedStringFromTableInBundle(@"DUGA Content URL", @"Localizable", bundle, nil),
+            MP42MetadataKeyTMDbContentURL: NSLocalizedStringFromTableInBundle(@"TMDb Content URL", @"Localizable", bundle, nil),
+            MP42MetadataKeyTMDbShowID: NSLocalizedStringFromTableInBundle(@"TMDb Show ID", @"Localizable", bundle, nil),
+
             MP42MetadataKeyFANZAContentURL:
                 NSLocalizedStringFromTableInBundle(@"FANZA Content URL", @"Localizable", bundle, nil),
 
@@ -913,6 +920,15 @@ NSString *const MP42MetadataKeyMissAVContentURL = @"MissAV Content URL";
 NSString *const MP42MetadataKeyJapanDVDContentID = @"Japan DVD Content ID";
 NSString *const MP42MetadataKeyJapanDVDProductID = @"Japan DVD Product ID";
 NSString *const MP42MetadataKeyJapanDVDContentURL = @"Japan DVD Content URL";
+
+// DUGA Extended Metadata
+NSString *const MP42MetadataKeyDUGAContentID = @"DUGA Content ID";
+NSString *const MP42MetadataKeyDUGAProductID = @"DUGA Product ID";
+NSString *const MP42MetadataKeyDUGAContentURL = @"DUGA Content URL";
+
+// TMDb Extended Metadata
+NSString *const MP42MetadataKeyTMDbContentURL = @"TMDb Content URL";
+NSString *const MP42MetadataKeyTMDbShowID = @"TMDb Show ID";
 
 // MARK: - Wavve Extended Metadata
 

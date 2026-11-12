@@ -233,6 +233,13 @@ extern NSString *const MP42MetadataKeyJapanDVDContentID;
 extern NSString *const MP42MetadataKeyJapanDVDProductID;
 extern NSString *const MP42MetadataKeyJapanDVDContentURL;
 
+// DUGA Extended Metadata keys
+extern NSString *const MP42MetadataKeyDUGAContentID;
+extern NSString *const MP42MetadataKeyDUGAProductID;
+extern NSString *const MP42MetadataKeyDUGAContentURL;
+extern NSString *const MP42MetadataKeyTMDbContentURL;
+extern NSString *const MP42MetadataKeyTMDbShowID;
+
 // U-NEXT Extended Metadata keys
 extern NSString *const MP42MetadataKeyUNEXTMovieID;             // String
 extern NSString *const MP42MetadataKeyUNEXTShowID;              // String

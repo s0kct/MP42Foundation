@@ -172,6 +172,8 @@
         MP42MetadataKeyUnofficialASIN,
         MP42MetadataKeyUnofficialAbridged,
         MP42MetadataKeyTMDbContentID,
+        MP42MetadataKeyTMDbContentURL,
+        MP42MetadataKeyTMDbShowID,
 
         // AB / Apple TV Extended Metadata
         MP42MetadataKeyPrimeVideoGenre,
@@ -249,6 +251,11 @@
         MP42MetadataKeyJapanDVDContentID,
         MP42MetadataKeyJapanDVDProductID,
         MP42MetadataKeyJapanDVDContentURL,
+
+        // DUGA Extended Metadata
+        MP42MetadataKeyDUGAContentID,
+        MP42MetadataKeyDUGAProductID,
+        MP42MetadataKeyDUGAContentURL,
 
         // U-NEXT Extended Metadata
         MP42MetadataKeyUNEXTMovieID,
@@ -412,6 +419,8 @@
         MP42MetadataKeyUnofficialASIN,
         MP42MetadataKeyUnofficialAbridged,
         MP42MetadataKeyTMDbContentID,
+        MP42MetadataKeyTMDbContentURL,
+        MP42MetadataKeyTMDbShowID,
 
         // AB / Apple TV Extended Metadata
         MP42MetadataKeyAppleTVContentID,
@@ -487,6 +496,11 @@
         MP42MetadataKeyJapanDVDContentID,
         MP42MetadataKeyJapanDVDProductID,
         MP42MetadataKeyJapanDVDContentURL,
+
+        // DUGA Extended Metadata
+        MP42MetadataKeyDUGAContentID,
+        MP42MetadataKeyDUGAProductID,
+        MP42MetadataKeyDUGAContentURL,
 
         // U-NEXT Extended Metadata
         MP42MetadataKeyUNEXTMovieID,
@@ -1161,6 +1175,12 @@
     [self readABMetadataFromFileHandle:sourceHandle
                            metadataKey:MP42MetadataKeyTMDbContentID
                                   name:"TMDbContentID"];
+    [self readABMetadataFromFileHandle:sourceHandle
+                           metadataKey:MP42MetadataKeyTMDbContentURL
+                                  name:"TMDbContentURL"];
+    [self readABMetadataFromFileHandle:sourceHandle
+                           metadataKey:MP42MetadataKeyTMDbShowID
+                                  name:"TMDbShowID"];
     
     // ============================================================
     // Prime Video Extended Metadata READ
@@ -1214,6 +1234,11 @@
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyJapanDVDContentID name:"JapanDVDContentID"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyJapanDVDProductID name:"JapanDVDProductID"];
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyJapanDVDContentURL name:"JapanDVDContentURL"];
+
+    // DUGA Extended Metadata READ
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyDUGAContentID name:"DUGAContentID"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyDUGAProductID name:"DUGAProductID"];
+    [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyDUGAContentURL name:"DUGAContentURL"];
 
     // Wavve Extended Metadata READ
     [self readABMetadataFromFileHandle:sourceHandle metadataKey:MP42MetadataKeyWavveMovieID name:"WavveMovieID"];
@@ -2122,6 +2147,12 @@
     [self writeABMetadataWithFileHandle:fileHandle
                             metadataKey:MP42MetadataKeyTMDbContentID
                                    name:"TMDbContentID"];
+    [self writeABMetadataWithFileHandle:fileHandle
+                           metadataKey:MP42MetadataKeyTMDbContentURL
+                                  name:"TMDbContentURL"];
+    [self writeABMetadataWithFileHandle:fileHandle
+                           metadataKey:MP42MetadataKeyTMDbShowID
+                                  name:"TMDbShowID"];
     
     // ============================================================
     // Prime Video Extended Metadata WRITE
@@ -2175,6 +2206,11 @@
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyJapanDVDContentID name:"JapanDVDContentID"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyJapanDVDProductID name:"JapanDVDProductID"];
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyJapanDVDContentURL name:"JapanDVDContentURL"];
+
+    // DUGA Extended Metadata WRITE
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyDUGAContentID name:"DUGAContentID"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyDUGAProductID name:"DUGAProductID"];
+    [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyDUGAContentURL name:"DUGAContentURL"];
     
     // Wavve Extended Metadata WRITE
     [self writeABMetadataWithFileHandle:fileHandle metadataKey:MP42MetadataKeyWavveMovieID name:"WavveMovieID"];
